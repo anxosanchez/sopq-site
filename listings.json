@@ -1,0 +1,20 @@
+[
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/posts/tema-4/index.html",
+      "/blog/posts/tema-3/index.html",
+      "/blog/posts/tema-2/index.html",
+      "/blog/posts/tema-1/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/blog/posts/tema-4/index.html",
+      "/blog/posts/tema-3/index.html",
+      "/blog/posts/tema-2/index.html",
+      "/blog/posts/tema-1/index.html"
+    ]
+  }
+]
