@@ -1,0 +1,19 @@
+---
+title: "Blog e Cadernos Docentes"
+subtitle: "Artigos técnicos, pílulas audiovisuais e cadernos NotebookLM da materia SOPQ"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: grid
+  categories: true
+  sort-ui: true
+  filter-ui: true
+  fields: [date, title, subtitle, categories, reading-time, author]
+---
+
+::: {.hero-banner}
+::: {.hero-content}
+<h2 class="text-white fw-bold mb-2">📰 Blog Académico e Recursos Multimedia</h2>
+<p class="text-light mb-0">Revisións profundas dos temas, guías de automatización en Python e pílulas de audio de NotebookLM.</p>
+:::
+:::

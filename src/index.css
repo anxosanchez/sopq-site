@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --color-glass-bg: rgba(30, 41, 59, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.08);
+  --color-glass-bg-light: rgba(255, 255, 255, 0.45);
+  --color-glass-border-light: rgba(15, 23, 42, 0.08);
+  
+  --animate-bubble-rise: bubble-rise 2s infinite linear;
+  --animate-liquid-drip: liquid-drip 1.5s infinite linear;
+  --animate-vapor-pulse: vapor-pulse 3s infinite ease-in-out;
+  
+  @keyframes bubble-rise {
+    0% {
+      transform: translateY(0) scale(0.8);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.8;
+    }
+    90% {
+      opacity: 0.8;
+    }
+    100% {
+      transform: translateY(-24px) scale(1.2);
+      opacity: 0;
+    }
+  }
+
+  @keyframes liquid-drip {
+    0% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: -40;
+    }
+  }
+
+  @keyframes vapor-pulse {
+    0%, 100% {
+      opacity: 0.15;
+    }
+    50% {
+      opacity: 0.35;
+    }
+  }
+}
+
+:root {
+  color-scheme: dark light;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: var(--color-glass-bg);
+  border: 1px solid var(--color-glass-border);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.light .glass {
+  background: var(--color-glass-bg-light);
+  border: 1px solid var(--color-glass-border-light);
+}
+
+/* Hide default Vite page centering */
+#root {
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  text-align: left;
+  border: none;
+}

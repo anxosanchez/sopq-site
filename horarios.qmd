@@ -1,0 +1,66 @@
+---
+title: "Horarios e Titorías"
+subtitle: "Planificación de aulas, titorías presenciais e atención vía Campus Remoto da UVigo"
+---
+
+::: {.hero-banner}
+::: {.hero-content}
+<h2 class="text-white fw-bold mb-2">📍 Horarios de Clase e Atención ao Alumnado</h2>
+<p class="text-light mb-0">Escola de Enxeñaría Industrial (EEI) — Sede Campus Maxwell nº 9</p>
+:::
+:::
+
+## 🕒 Horario Lectivo Semanal (Cuadrimestre 1)
+
+::: {.schedule-table-wrapper}
+
+| Día | Horario | Tipo de Sesión | Aula / Sede | Observacións |
+|:---:|:---:|:---:|:---|:---|
+| **Martes** | 10:00 - 12:00 h | <span class="badge-type badge-teoria">Teoría / Master</span> | Aula Informática 5 (Campus Maxwell) | Fundamentos teóricos e modelos |
+| **Xoves** | 10:00 - 12:00 h | <span class="badge-type badge-tic">Laboratorio TIC</span> | Aula Informática 5 (Campus Maxwell) | Prácticas con Aspen Plus, HYSYS e Python |
+
+:::
+
+---
+
+## 👨‍🏫 Horarios de Titorías (Prof. Ángel M. Sánchez Bermúdez)
+
+As titorías pódense realizar de xeito **presencial** no despacho do profesor ou de xeito **virtual** a través do Campus Remoto da Universidade de Vigo.
+
+::: {.row .g-4 .my-4}
+
+::: {.col-md-6}
+::: {.glass-card}
+### 🏫 Titorías Presenciais
+**Despacho do Profesor:**  
+Departamento de Enxeñaría Química  
+Sede Campus Maxwell nº 9 (EEI)  
+  
+**Horario de Atención:**  
+• **Martes:** 12:00 - 14:00 h e 16:00 - 18:00 h  
+• **Xoves:** 12:00 - 14:00 h  
+  
+*Recoméndase concertar cita previa por correo electrónico.*
+:::
+:::
+
+::: {.col-md-6}
+::: {.glass-card}
+### 💻 Titorías Virtuais (Campus Remoto)
+**Despacho Virtual na UVigo:**  
+[Acceso ao Campus Remoto UVigo](https://campusremotouvigo.gal)  
+  
+**Plataforma Complementaria:**  
+Microsoft Teams (Equipo Oficial SOPQ)  
+  
+**Procedemento de Cita Previa:**  
+Enviar mensaxe previa por correo institucional ou chat de Teams para confirmar dispoñibilidade.
+:::
+:::
+
+:::
+
+::: {.callout-tip icon=true}
+## Solicitud de Cita e Consultas
+Para calquera consulta sobre as prácticas ou o proxecto personalizado, escribe dende o teu correo institucional (`@alumnos.uvigo.es`) ao docente responsable co asunto `[SOPQ-Titoría] Nome Apelidos`.
+:::

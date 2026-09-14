@@ -1,0 +1,115 @@
+---
+title: "Tema 2: Arquitectura SM vs EO, Grafos e Métodos de Reciclo"
+subtitle: "Particionamento topolóxico (Tarjan), selección de correntes de corte e converxencia numérica con Wegstein e Broyden"
+date: "2026-09-29"
+author: "Prof. Ángel Manuel Sánchez Bermúdez"
+categories: [Arquitectura SM/EO, Grafos, Reciclos, Wegstein, Broyden, Tema 2]
+---
+
+::: {.hero-banner}
+::: {.hero-content}
+<h2 class="text-white fw-bold mb-2">⚙️ Tema 2: Arquitectura dos Simuladores e Reciclos</h2>
+<p class="text-light mb-0">Particionamento de grafos de proceso e algoritmos avanzados de aceleración da converxencia.</p>
+:::
+:::
+
+::: {.trilingual-summary}
+::: {.trilingual-header}
+🌐 Resumo Executivo Trilingüe / Trilingual Executive Summary
+:::
+
+::: {.lang-block}
+<span class="lang-flag">Galego (Vehicular)</span>
+Neste tema analízanse as diferenzas estructurais entre o paradigma Modular-Secuencial (SM) e o Orientado a Ecuacións (EO). Estúdiase a ordenación topolóxica mediante o algoritmo de Tarjan para identificar compoñentes fortemente conexas e a selección óptima de correntes de corte (*tear streams*). Finalmente, formulase a resolución de reciclos mediante os métodos numéricos de Wegstein e Broyden.
+:::
+
+::: {.lang-block}
+<span class="lang-flag">Castelán (Español)</span>
+En este tema se analizan las diferencias estructurales entre el paradigma Modular-Secuencial (SM) y el Orientado a Ecuaciones (EO). Se estudia la ordenación topológica mediante el algoritmo de Tarjan para identificar componentes fuertemente conexas y la selección óptima de corrientes de corte (*tear streams*). Finalmente, se formula la resolución de reciclos mediante los métodos numéricos de Wegstein y Broyden.
+:::
+
+::: {.lang-block}
+<span class="lang-flag">Inglés (English)</span>
+This topic examines the structural differences between Sequential Modular (SM) and Equation Oriented (EO) paradigms. Graph partitioning via Tarjan's algorithm is studied to identify strongly connected components and optimal tear streams. Finally, recycling loop convergence acceleration using Wegstein and Broyden numerical solvers is thoroughly formulated.
+:::
+:::
+
+---
+
+## 1. Paradigma SM (Sequential Modular) vs. EO (Equation Oriented)
+
+::: {.row .g-4 .my-3}
+
+::: {.col-md-6}
+::: {.glass-card}
+### 🔷 Sequential Modular (SM)
+- **Modo de cálculo:** Módulo por módulo na dirección do fluxo de materia.
+- **Vantaxes:** Robusto, fácil de interpretar físicamente, cada módulo é un subprograma independente.
+- **Inconvenientes:** Lentitude en reciclos complexos e dificultades en optimización con restricións.
+:::
+:::
+
+::: {.col-md-6}
+::: {.glass-card}
+### 🔶 Equation Oriented (EO)
+- **Modo de cálculo:** Montaxe dun único sistema de ecuacións alxébrico-diferenciais ($DAEs$) $f(x) = 0$.
+- **Vantaxes:** Ultrarrápido para optimización e análise de sensibilidade.
+- **Inconvenientes:** Require moi bos valores iniciais (*initial estimates*) para garantir a converxencia.
+:::
+:::
+
+:::
+
+---
+
+## 2. Métodos Numéricos de Aceleración de Reciclos
+
+Nun reciclo, buscamos o punto fixo $x = g(x)$, equivalente a resolver a función de erro $f(x) = g(x) - x = 0$.
+
+### Método de Wegstein
+O método de Wegstein interpola o comportamento liñal entre a suposición inicial $x_k$ e o valor calculado $g(x_k)$:
+
+$$x_{k+1} = q x_k + (1 - q) g(x_k)$$
+
+onde o factor de aceleración $q$ calcúlase como:
+
+$$w = \frac{g(x_k) - g(x_{k-1})}{x_k - x_{k-1}}, \quad q = \frac{w}{w - 1}$$
+
+```python
+import numpy as np
+
+def wegstein_accel(x_old, x_new, g_old, g_new, q_min=-5.0, q_max=0.95):
+    """
+    Calcula o seguinte valor da variable de reciclo usando a aceleración de Wegstein.
+    """
+    denom = (x_new - x_old)
+    if abs(denom) < 1e-9:
+        return g_new
+    
+    w = (g_new - g_old) / denom
+    q = w / (w - 1.0)
+    
+    # Delimitar q para evitar diverxencia térmica ou oscilacións
+    q_bounded = np.clip(q, q_min, q_max)
+    
+    x_next = q_bounded * x_new + (1.0 - q_bounded) * g_new
+    return x_next
+```
+
+---
+
+## 🎧 Recursos e Caderno NotebookLM
+
+::: {.media-container}
+::: {.media-header}
+::: {.media-icon}
+📚
+:::
+<div>
+  <h4 class="media-title">Caderno e Podcast NotebookLM: Reciclos e Algoritmos de Grafos</h4>
+  <small class="text-muted">Análise interactiva do algoritmo de Tarjan e Sargent-Westerberg.</small>
+</div>
+:::
+
+Estuda os detalles da matriz de adxacencia e descomposicion de grafos no caderno oficial [NotebookLM SOPQ Tema 2](https://notebooklm.google.com).
+:::

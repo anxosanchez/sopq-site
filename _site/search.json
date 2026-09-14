@@ -1,0 +1,275 @@
+[
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Cronograma Lectivo 2026 / 2027",
+    "section": "",
+    "text": "Sesións de Teoría (Martes 10:00 - 12:00 h) e Laboratorios TIC na Aula Informática 5 (Xoves 10:00 - 12:00 h)."
+  },
+  {
+    "objectID": "schedule.html#calendario-oficial-eei-20262027",
+    "href": "schedule.html#calendario-oficial-eei-20262027",
+    "title": "Cronograma Lectivo 2026 / 2027",
+    "section": "Calendario Oficial EEI 2026/2027",
+    "text": "Calendario Oficial EEI 2026/2027\nO cronograma organízase nas 14 semanas lectivas efectivas do primeiro cuadrimestre. As entregas dos traballos de laboratorio e do proxecto de simulación teñen datas límite estritas marcadas na táboa."
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog e Cadernos Docentes",
+    "section": "",
+    "text": "📰 Blog Académico e Recursos Multimedia\n\n\nRevisións profundas dos temas, guías de automatización en Python e pílulas de audio de NotebookLM.\n\n\n\n\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\nTema 4: Termodinámica Computacional e Selección de Modelos de Propiedades\n\n\nÁrbores de decisión (Carlson), Peng-Robinson vs NRTL/UNIQUAC, UNIFAC, electrólitos e compoñentes biorenovables\n\n2 min\n\n\nTermodinámica\n\nNRTL\n\nPeng-Robinson\n\nUNIFAC\n\nElectrólitos\n\nTema 4\n\n\n\n\nProf. Ángel Manuel Sánchez Bermúdez\n\n\nOct 20, 2026\n\n\n\n\n\n\n\n\n\n\nTema 3: Graos de Liberdade e Especificacións de Deseño (Design Specs)\n\n\nAnálise sistemática de graos de liberdade en plantas químicas, prevención de sobreespecificación e implementación de Design Specs en Aspen Plus\n\n3 min\n\n\nGraos de Liberdade\n\nDesign Specs\n\nSolución de Inconsistencias\n\nTema 3\n\n\n\n\nProf. Ángel Manuel Sánchez Bermúdez\n\n\nOct 13, 2026\n\n\n\n\n\n\n\n\n\n\nTema 2: Arquitectura SM vs EO, Grafos e Métodos de Reciclo\n\n\nParticionamento topolóxico (Tarjan), selección de correntes de corte e converxencia numérica con Wegstein e Broyden\n\n3 min\n\n\nArquitectura SM/EO\n\nGrafos\n\nReciclos\n\nWegstein\n\nBroyden\n\nTema 2\n\n\n\n\nProf. Ángel Manuel Sánchez Bermúdez\n\n\nSep 29, 2026\n\n\n\n\n\n\n\n\n\n\nTema 1: Paradigmas Actuais, Digital Twins e Interface Python-COM\n\n\nDixitalización en enxeñaría química, xemelgos dixitais de plantas e automatización de Aspen Plus via COM API\n\n3 min\n\n\nSimulación\n\nDigital Twins\n\nPython-COM\n\nTema 1\n\n\n\n\nProf. Ángel Manuel Sánchez Bermúdez\n\n\nSep 22, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/posts/tema-2/index.html",
+    "href": "blog/posts/tema-2/index.html",
+    "title": "Tema 2: Arquitectura SM vs EO, Grafos e Métodos de Reciclo",
+    "section": "",
+    "text": "Particionamento de grafos de proceso e algoritmos avanzados de aceleración da converxencia."
+  },
+  {
+    "objectID": "blog/posts/tema-2/index.html#paradigma-sm-sequential-modular-vs.-eo-equation-oriented",
+    "href": "blog/posts/tema-2/index.html#paradigma-sm-sequential-modular-vs.-eo-equation-oriented",
+    "title": "Tema 2: Arquitectura SM vs EO, Grafos e Métodos de Reciclo",
+    "section": "1. Paradigma SM (Sequential Modular) vs. EO (Equation Oriented)",
+    "text": "1. Paradigma SM (Sequential Modular) vs. EO (Equation Oriented)\n\n\n\n🔷 Sequential Modular (SM)\n\nModo de cálculo: Módulo por módulo na dirección do fluxo de materia.\nVantaxes: Robusto, fácil de interpretar físicamente, cada módulo é un subprograma independente.\nInconvenientes: Lentitude en reciclos complexos e dificultades en optimización con restricións.\n\n\n\n\n\n🔶 Equation Oriented (EO)\n\nModo de cálculo: Montaxe dun único sistema de ecuacións alxébrico-diferenciais (\\(DAEs\\)) \\(f(x) = 0\\).\nVantaxes: Ultrarrápido para optimización e análise de sensibilidade.\nInconvenientes: Require moi bos valores iniciais (initial estimates) para garantir a converxencia."
+  },
+  {
+    "objectID": "blog/posts/tema-2/index.html#métodos-numéricos-de-aceleración-de-reciclos",
+    "href": "blog/posts/tema-2/index.html#métodos-numéricos-de-aceleración-de-reciclos",
+    "title": "Tema 2: Arquitectura SM vs EO, Grafos e Métodos de Reciclo",
+    "section": "2. Métodos Numéricos de Aceleración de Reciclos",
+    "text": "2. Métodos Numéricos de Aceleración de Reciclos\nNun reciclo, buscamos o punto fixo \\(x = g(x)\\), equivalente a resolver a función de erro \\(f(x) = g(x) - x = 0\\).\n\nMétodo de Wegstein\nO método de Wegstein interpola o comportamento liñal entre a suposición inicial \\(x_k\\) e o valor calculado \\(g(x_k)\\):\n\\[x_{k+1} = q x_k + (1 - q) g(x_k)\\]\nonde o factor de aceleración \\(q\\) calcúlase como:\n\\[w = \\frac{g(x_k) - g(x_{k-1})}{x_k - x_{k-1}}, \\quad q = \\frac{w}{w - 1}\\]\nimport numpy as np\n\ndef wegstein_accel(x_old, x_new, g_old, g_new, q_min=-5.0, q_max=0.95):\n    \"\"\"\n    Calcula o seguinte valor da variable de reciclo usando a aceleración de Wegstein.\n    \"\"\"\n    denom = (x_new - x_old)\n    if abs(denom) &lt; 1e-9:\n        return g_new\n    \n    w = (g_new - g_old) / denom\n    q = w / (w - 1.0)\n    \n    # Delimitar q para evitar diverxencia térmica ou oscilacións\n    q_bounded = np.clip(q, q_min, q_max)\n    \n    x_next = q_bounded * x_new + (1.0 - q_bounded) * g_new\n    return x_next"
+  },
+  {
+    "objectID": "blog/posts/tema-2/index.html#recursos-e-caderno-notebooklm",
+    "href": "blog/posts/tema-2/index.html#recursos-e-caderno-notebooklm",
+    "title": "Tema 2: Arquitectura SM vs EO, Grafos e Métodos de Reciclo",
+    "section": "🎧 Recursos e Caderno NotebookLM",
+    "text": "🎧 Recursos e Caderno NotebookLM\n\n\n\n📚\n\n\n\nCaderno e Podcast NotebookLM: Reciclos e Algoritmos de Grafos\n\nAnálise interactiva do algoritmo de Tarjan e Sargent-Westerberg.\n\n\nEstuda os detalles da matriz de adxacencia e descomposicion de grafos no caderno oficial NotebookLM SOPQ Tema 2."
+  },
+  {
+    "objectID": "blog/posts/tema-4/index.html",
+    "href": "blog/posts/tema-4/index.html",
+    "title": "Tema 4: Termodinámica Computacional e Selección de Modelos de Propiedades",
+    "section": "",
+    "text": "Selección rigorosa de ecuacións de estado e modelos de coeficientes de actividade."
+  },
+  {
+    "objectID": "blog/posts/tema-4/index.html#árbore-de-decisión-termodinámica-carlson-decision-tree",
+    "href": "blog/posts/tema-4/index.html#árbore-de-decisión-termodinámica-carlson-decision-tree",
+    "title": "Tema 4: Termodinámica Computacional e Selección de Modelos de Propiedades",
+    "section": "1. Árbore de Decisión Termodinámica (Carlson Decision Tree)",
+    "text": "1. Árbore de Decisión Termodinámica (Carlson Decision Tree)\nA elección incorrecta do modelo de propiedades é a causa principal do fallo de simulacións industriais.\ngraph TD\n    A[\"¿Sistemas Polares ou No Polares?\"] --&gt;|No Polares| B[\"¿Presión P &gt; 10 bar?\"]\n    A --&gt;|Polares| C[\"¿Existen datos de equilibrio VLE?\"]\n    \n    B --&gt;|Si| D[\"Peng-Robinson / SRK\"]\n    B --&gt;|Non| E[\"Chao-Seader / Grayson-Streed\"]\n    \n    C --&gt;|Si| F[\"NRTL / UNIQUAC / Wilson\"]\n    C --&gt;|Non| G[\"UNIFAC (Contribución por grupos)\"]"
+  },
+  {
+    "objectID": "blog/posts/tema-4/index.html#formulaciones-principales",
+    "href": "blog/posts/tema-4/index.html#formulaciones-principales",
+    "title": "Tema 4: Termodinámica Computacional e Selección de Modelos de Propiedades",
+    "section": "2. Formulaciones Principales",
+    "text": "2. Formulaciones Principales\n\nEcuación de Estado de Peng-Robinson (\\(EOS\\))\n\\[P = \\frac{R T}{V_m - b} - \\frac{a(T)}{V_m^2 + 2bV_m - b^2}\\]\nAxeitada para hidrocarburos, gases disoltos e condicións supercriticals a alta presión.\n\n\nModelo \\(NRTL\\) (Non-Random Two-Liquid)\n\\[\\ln \\gamma_i = \\frac{\\sum_j \\tau_{ji} G_{ji} x_j}{\\sum_k G_{ki} x_k} + \\sum_j \\frac{x_j G_{ij}}{\\sum_k G_{kj} x_k} \\left( \\tau_{ij} - \\frac{\\sum_m x_m \\tau_{mj} G_{mj}}{\\sum_k G_{kj} x_k} \\right)\\]\nOnde \\(G_{ij} = \\exp(-\\alpha_{ij} \\tau_{ij})\\). Ideal para mezclas líquidas altamente polares, azeotrópicas e inmiscibles a baixa/media presión."
+  },
+  {
+    "objectID": "blog/posts/tema-4/index.html#audio-e-material-notebooklm",
+    "href": "blog/posts/tema-4/index.html#audio-e-material-notebooklm",
+    "title": "Tema 4: Termodinámica Computacional e Selección de Modelos de Propiedades",
+    "section": "🎧 Audio e Material NotebookLM",
+    "text": "🎧 Audio e Material NotebookLM\n\n\n\n🎙️\n\n\n\nPodcast NotebookLM: Selección Termodinámica e Erros Frecuentes\n\nComo evitar catástrofes de simulación escollendo o modelo termodinámico correcto.\n\n\nAccede ao caderno completo e simulador interactivo de coeficientes de actividade en NotebookLM SOPQ Tema 4."
+  },
+  {
+    "objectID": "laboratorios-tic.html",
+    "href": "laboratorios-tic.html",
+    "title": "Catálogo de Laboratorios TIC",
+    "section": "",
+    "text": "Manexo profesional de Aspen Plus, Aspen HYSYS, Aspen Energy Analyzer, DWSIM e integración con Python-COM."
+  },
+  {
+    "objectID": "laboratorios-tic.html#catálogo-completo-das-12-sesións-tic",
+    "href": "laboratorios-tic.html#catálogo-completo-das-12-sesións-tic",
+    "title": "Catálogo de Laboratorios TIC",
+    "section": "🛠️ Catálogo Completo das 12 Sesións TIC",
+    "text": "🛠️ Catálogo Completo das 12 Sesións TIC\n\n\nPráctica 1: Configuración do Contorno Python-COM e Primeiros Pasos\n\nObxectivo: Configurar o contorno de desenvolvemento en Python e establecer a comunicación via protocolo COM/OLE con Microsoft Excel e Aspen Plus.\nSoftware: Python 3.12, Anaconda Jupyter, win32com.client.\nFluxo de Traballo:\n\nVerificación das bibliotecas win32com e rexistro de DLLs de AspenTech.\nCreación dun script de proba para automatizar a apertura e peche da instancia de Aspen Plus en segundo plano (AspenPlus.Document).\nLectura e escritura de variables de entrada/saída en correntes de proceso.\n\nEntregable: Caderno Jupyter .ipynb coa función de conexión e informe de verificación.\n\n\n\n\n\nPráctica 2: Particionamento e Ordenación de Grafos (Algoritmo de Tarjan)\n\nObxectivo: Implementar en Python o particionamento de diagramas de fluxo de procesos (\\(PFD\\)) para identificar compoñentes fortemente conexas e ordenación topolóxica.\nSoftware: Python, networkx, matplotlib.\nFluxo de Traballo:\n\nFormulación da matriz de adxacencia para un PFD industrial con 3 bucles de reciclo interconectados.\nExecución do algoritmo de Tarjan para descompoñer o grafo en bloques calculables de xeito secuencial.\nDeterminación do conxunto mínimo de correntes de corte (tear streams).\n\nEntregable: Script en Python que reciba unha matriz de conexións e devolva a orde de cálculo óptima.\n\n\n\n\n\nPráctica 3: Algoritmos de Converxencia de Reciclos (Wegstein vs. Broyden)\n\nObxectivo: Programar e comparar a rapidez de converxencia dos métodos de Substitución Directa, Wegstein acelerado e Broyden nun reciclo complexo.\nSoftware: Python, scipy.optimize.\nFluxo de Traballo:\n\nDefinición das ecuacións de masa e enerxía nun divisor/misturador con reactor e reciclo.\nImplementación da función de erro de reciclo \\(f(x) = x_{calculado} - x_{asumido} = 0\\).\nComparativa de iteracións e gráfica de converxencia entre Wegstein e Broyden.\n\nEntregable: Informe comparativo de converxencia e gráfica de iteracións.\n\n\n\n\n\nPráctica 4: Análise de Graos de Liberdade e Design Specs en Aspen Plus\n\nObxectivo: Analizar rigorosamente os graos de liberdade (\\(GL\\)) dunha liña de proceso e resolver especificaciones de deseño (Design Specs).\nSoftware: Aspen Plus v14.\nFluxo de Traballo:\n\nConstrución do PFD en Aspen Plus para o proceso de separación de alcoholes.\nConteo manual vs. automático de graos de liberdade (\\(GL = C - P + 2\\)).\nConfiguración dunha Design Spec para fixar a puridade de fondo dunha columna manipulando o refluxo.\n\nEntregable: Ficheiro de Aspen Plus .bkp e táboa de especificacións.\n\n\n\n\n\nPráctica 5: Selección e Estimación de Parámetros Termodinámicos\n\nObxectivo: Utilizar a árbore de decisión de Carlson para seleccionar o modelo de propiedades axeitado e estimar parámetros de interacción binaria.\nSoftware: Aspen Properties / Aspen Plus v14.\nFluxo de Traballo:\n\nComparación entre os modelos \\(NRTL\\), \\(UNIQUAC\\) e \\(Peng-Robinson\\) para o sistema auga-etanol-isopropanol.\nRegresión de datos experimentais \\(VLE\\) (Equilibrio Vapor-Líquido) para determinar coeficientes binarios \\(a_{ij}, b_{ij}\\).\nValidar co modelo de predición de contribució por grupos \\(UNIFAC\\).\n\nEntregable: Diagramas de fase \\(y-x\\) e \\(P-x-y\\) comparando datos experimentais e regresionados.\n\n\n\n\n\nPráctica 6: Simulación de Operacións Flash e Extracción en DWSIM\n\nObxectivo: Construír e resolver a mesma liña de proceso flash e extracción líquido-líquido en DWSIM (Open Source) e Aspen Plus.\nSoftware: DWSIM 8, Aspen Plus v14.\nFluxo de Traballo:\n\nSimulación dunha separación flash tres fases (\\(V-L-L\\)) en DWSIM.\nComprobación da desviación nos balances de enerxía e composicións dos dous simuladores.\nAnálise dos tempos de cálculo e estabilidade numérica dos algortimos.\n\nEntregable: Cadre comparativo de resultados DWSIM vs. Aspen Plus.\n\n\n\n\n\nPráctica 7: Columnas de Destilación Rigorosa (RadFrac) e Análise de Sensibilidade\n\nObxectivo: Simular unha columna de destilación multicompoñente rigorosa con RadFrac e realizar análises de sensibilidade.\nSoftware: Aspen Plus v14 (RadFrac).\nFluxo de Traballo:\n\nEspecificación de platos, alimentación, razón de refluxo e destilado en RadFrac.\nAnálise de sensibilidade (Sensitivity Tool) variando o plato de alimentación e a presión da columna.\nOptimización da etapa de alimentación para minimizar o consumo térmico no rebullidor.\n\nEntregable: Gráficas de perfil de temperatura e composición ao longo da columna.\n\n\n\n\n\nPráctica 8: Reactores Químicos RPlug e RCSTR en Aspen HYSYS\n\nObxectivo: Simular a cinética de síntese do metanol ou hidrocarburos nun reactor PFR con ecuacións de taxa de reacción complexas.\nSoftware: Aspen HYSYS v14.\nFluxo de Traballo:\n\nIntrodución da expresión cinética de Langmuir-Hinshelwood no conxunto de reaccións de HYSYS.\nSimulación dun reactor tubular adiabático vs. isotermo.\nAcoplamento do reactor coa liña de separación e reciclo de reactivos non convertidos.\n\nEntregable: Perfiles de conversión e temperatura lonxitudinal do reactor.\n\n\n\n\n\nPráctica 9: Control e Automatización Avanzada via Python-COM\n\nObxectivo: Controlar Aspen Plus en bucle pechado dende un script externo de Python.\nSoftware: Python 3.12, Aspen Plus v14, win32com.\nFluxo de Traballo:\n\nConexión de Python á árbore de variables de Aspen Plus (\\Data\\Blocks\\B1\\Input\\FRAC).\nBucle de automatización para executar 50 casos de simulación modificando condicións de entrada.\nExtracción automática de resultados e gardado en dataframe de pandas e ficheiro Excel.\n\nEntregable: Script de automatización e ficheiro .csv cos 50 casos executados.\n\n\n\n\n\nPráctica 10: Optimización Sen Restricións de Procesos en SciPy / Pyomo\n\nObxectivo: Formular e resolver a optimización económica dun reactor CSTR usando os algoritmos Nelder-Mead e BFGS.\nSoftware: Python (scipy.optimize, pyomo).\nFluxo de Traballo:\n\nFormulación da función de beneficio económico \\(F(V, T) = Venda_{Produtos} - Custo_{Reactivos} - Custo_{Enerxía}\\).\nResolución con scipy.optimize.minimize empregando o método de Nelder-Mead (caixa negra).\nComparación dos resultados co método BFGS baseado en gradientes analíticos.\n\nEntregable: Caderno .ipynb coa gráfica 3D da superficie de beneficio e o punto óptimo.\n\n\n\n\n\nPráctica 11: Optimización de Plantas con Restricións (SQP en Aspen Optimizer)\n\nObxectivo: Resolver problemas de optimización con restricións operativas e de calidade mediante o algoritmo SQP.\nSoftware: Aspen Plus v14 (Model Analysis Tools - Optimization).\nFluxo de Traballo:\n\nDefinición da función obxectivo económica no módulo de optimización de Aspen Plus.\nIntrodución de restricións de desigualdade (temperatura máxima no reactor, pureza mínima no produto).\nExecución do algoritmo SQP (Sequential Quadratic Programming) e análise de sensibilidade dos multiplicadores de Lagrange.\n\nEntregable: Informe do optimizador de Aspen Plus con táboa de variables de decisión e restricións activas.\n\n\n\n\n\nPráctica 12: Análise Pinch e Deseño de Redes HEN con Aspen Energy Analyzer\n\nObxectivo: Realizar a integración enerxética dunha planta química completa e deseñar a rede de intercambiadores de calor (HEN).\nSoftware: Aspen Energy Analyzer v14.\nFluxo de Traballo:\n\nExtracción de correntes frías e quentes dende o modelo de simulación de Aspen Plus.\nDeterminación do punto Pinch, utilidades mínimas quentes (\\(Q_{H,min}\\)) e frías (\\(Q_{C,min}\\)) para un \\(\\Delta T_{min} = 10^\\circ C\\).\nDeseño manual e automático da rede de intercambiadores (\\(HEN\\)) cumprindo as regras Pinch.\n\nEntregable: Diagrama de rexetas de temperatura e deseño final da rede HEN en Aspen Energy Analyzer."
+  },
+  {
+    "objectID": "horarios.html",
+    "href": "horarios.html",
+    "title": "Horarios e Titorías",
+    "section": "",
+    "text": "Escola de Enxeñaría Industrial (EEI) — Sede Campus Maxwell nº 9"
+  },
+  {
+    "objectID": "horarios.html#horario-lectivo-semanal-cuadrimestre-1",
+    "href": "horarios.html#horario-lectivo-semanal-cuadrimestre-1",
+    "title": "Horarios e Titorías",
+    "section": "🕒 Horario Lectivo Semanal (Cuadrimestre 1)",
+    "text": "🕒 Horario Lectivo Semanal (Cuadrimestre 1)\n\n\n\n\n\n\n\n\n\n\n\nDía\nHorario\nTipo de Sesión\nAula / Sede\nObservacións\n\n\n\n\nMartes\n10:00 - 12:00 h\nTeoría / Master\nAula Informática 5 (Campus Maxwell)\nFundamentos teóricos e modelos\n\n\nXoves\n10:00 - 12:00 h\nLaboratorio TIC\nAula Informática 5 (Campus Maxwell)\nPrácticas con Aspen Plus, HYSYS e Python"
+  },
+  {
+    "objectID": "horarios.html#horarios-de-titorías-prof.-ángel-m.-sánchez-bermúdez",
+    "href": "horarios.html#horarios-de-titorías-prof.-ángel-m.-sánchez-bermúdez",
+    "title": "Horarios e Titorías",
+    "section": "👨‍🏫 Horarios de Titorías (Prof. Ángel M. Sánchez Bermúdez)",
+    "text": "👨‍🏫 Horarios de Titorías (Prof. Ángel M. Sánchez Bermúdez)\nAs titorías pódense realizar de xeito presencial no despacho do profesor ou de xeito virtual a través do Campus Remoto da Universidade de Vigo.\n\n\n\n🏫 Titorías Presenciais\nDespacho do Profesor:\nDepartamento de Enxeñaría Química\nSede Campus Maxwell nº 9 (EEI)\nHorario de Atención:\n• Martes: 12:00 - 14:00 h e 16:00 - 18:00 h\n• Xoves: 12:00 - 14:00 h\nRecoméndase concertar cita previa por correo electrónico.\n\n\n\n\n💻 Titorías Virtuais (Campus Remoto)\nDespacho Virtual na UVigo:\nAcceso ao Campus Remoto UVigo\nPlataforma Complementaria:\nMicrosoft Teams (Equipo Oficial SOPQ)\nProcedemento de Cita Previa:\nEnviar mensaxe previa por correo institucional ou chat de Teams para confirmar dispoñibilidade.\n\n\n\n\n\n\n\n\n\nTipSolicitud de Cita e Consultas\n\n\n\nPara calquera consulta sobre as prácticas ou o proxecto personalizado, escribe dende o teu correo institucional (@alumnos.uvigo.es) ao docente responsable co asunto [SOPQ-Titoría] Nome Apelidos."
+  },
+  {
+    "objectID": "temario.html",
+    "href": "temario.html",
+    "title": "Programa e Temario Oficial",
+    "section": "",
+    "text": "Desenvolvemento rigoroso dos 9 temas organizados nos dous bloques estructurais da materia."
+  },
+  {
+    "objectID": "temario.html#bloque-1-simulación-de-procesos-químicos-temas-1-a-5",
+    "href": "temario.html#bloque-1-simulación-de-procesos-químicos-temas-1-a-5",
+    "title": "Programa e Temario Oficial",
+    "section": "🔷 Bloque 1: Simulación de Procesos Químicos (Temas 1 a 5)",
+    "text": "🔷 Bloque 1: Simulación de Procesos Químicos (Temas 1 a 5)\n\nTema 1: Introdución á Simulación de Procesos Químicos\n\n1.1. EVOLUCIÓN HISTÓRICA E PARADIGMAS ACTUAIS: Dende os cálculos manuais de balances de materia ata a simulacion dixital en tempo real.\n1.2. CONCEITO DE DIGITAL TWIN (XEMELGO DIXITAL): Integración de datos de planta en tempo real con modelos termodinámicos rigorosos.\n1.3. ECOSISTEMA TECNOLÓXICO INDUSTRIAL: Simuladores comerciais (Aspen Plus, HYSYS, PRO/II, ChemCAD) vs. Simuladores Open Source (DWSIM).\n1.4. AUTOMATIZACIÓN VIA PYTHON-COM: Interfaces de programación de aplicacións (API COM/OLE) para conectar Python con simuladores industriais.\n\n\n\nTema 2: Arquitectura Computacional dos Simuladores\n\n2.1. PARADIGMA SEQUENTIAL MODULAR (SM): Cálculo bloque a bloque, propagación de correntes e arquitectura modular.\n2.2. PARADIGMA EQUATION ORIENTED (EO): Formulación simultánea de sistemas de ecuacións alxébrico-diferenciais (\\(DAEs\\)).\n2.3. PARTICIONAMENTO E ORDENACIÓN DE GRAFOS: Algoritmos de ordenación topolóxica, identificación de compoñentes fortemente conexas (Algoritmo de Tarjan e Sargent-Westerberg).\n2.4. CONVERXENCIA DE RECICLOS: Selección de correntes de corte (tear streams) e métodos de aceleración da converxencia (Wegstein, Broyden, Direct Substitution).\n\n\n\nTema 3: Graos de Liberdade e Especificacións de Deseño\n\n3.1. ANÁLISE DE GRAOS DE LIBERDADE (\\(GL\\)): Regra das fases de Gibbs (\\(GL = C - P + 2\\)) aplicada a unidades individuais e diagramas de fluxo completos.\n3.2. SOBREESPECIFICACIÓN E INCONSISTENCIAS: Identificación e resolución de conflitos en sistemas de especificacións.\n3.3. FORMULACIÓN DE DESIGN SPECS (ESPECIFICACIÓNS DE DESEÑO): Integración de bucles de control e variables manipuladas vs. variables obxectivo.\n\n\n\nTema 4: Termodinámica Computacional e Modelos de Propiedades\n\n4.1. SELECCIÓN DE MODELOS DE PROPIEDADES: Árbores de decisión termodinámicas (Carlson decision tree).\n4.2. ECUACIÓNS DE ESTADO (\\(EOS\\)): Peng-Robinson, Soave-Redlich-Kwong (\\(SRK\\)) e extensións para gases e hidrocarburos.\n4.3. MODELOS DE COEFICIENTES DE ACTIVIDADE: \\(NRTL\\), \\(UNIQUAC\\), \\(Wilson\\) para fases líquidas non ideais a baixa presión.\n4.4. MÉTODOS DE CONTRIBUCIÓN DE GRUPOS: \\(UNIFAC\\) para a predición de equilibrio sen datos experimentais.\n4.5. SISTEMAS DE ELECTRÓLITOS E BIORENOVABLES: ElecNTRL, Pitzer e compoñentes non convencionais (sólidos, biomasa).\n\n\n\nTema 5: Simulación de Operacións de Separación e Reactores Químicos\n\n5.1. SEPARACIÓN VAPOR-LÍQUIDO E LÍQUIDO-LÍQUIDO: Flashes isotermos, adiabáticos e decantadores.\n5.2. COLUMNAS DE DESTILACIÓN RIGOROSAS: Algoritmo MESH (Material, Equilibrium, Summation, Heat), simuladores RadFrac e refinado de etapas.\n5.3. MODELIZACIÓN DE REACTORES QUÍMICOS: Reactores estequiométricos (\\(RStoic\\)), de equilibrio (\\(REquil\\)), CSTR (\\(RCSTR\\)) e fluxo pistón (\\(RPlug\\)) con cinética rigorosa de Power-Law e Langmuir-Hinshelwood."
+  },
+  {
+    "objectID": "temario.html#bloque-2-optimización-de-procesos-químicos-temas-6-a-9",
+    "href": "temario.html#bloque-2-optimización-de-procesos-químicos-temas-6-a-9",
+    "title": "Programa e Temario Oficial",
+    "section": "🔶 Bloque 2: Optimización de Procesos Químicos (Temas 6 a 9)",
+    "text": "🔶 Bloque 2: Optimización de Procesos Químicos (Temas 6 a 9)\n\nTema 6: Fundamentos de Optimización en Enxeñaría Química\n\n6.1. FORMULACIÓN MATEMÁTICA XERAL: Función obxectivo, variables de decisión e restricións de igualdade/desigualdade.\n6.2. CLASIFICACIÓN DE PROBLEMAS: Programación Liñal (\\(LP\\)), Non Liñal (\\(NLP\\)), Enteira Mixta (\\(MILP\\), \\(MINLP\\)).\n6.3. CONVEXIDADE E OPTIMIZACIÓN GLOBAL: Identificación de óptimos locais vs. óptimos globais en liñas de proceso químico.\n\n\n\nTema 7: Optimización Sen Restricións\n\n7.1. MÉTODOS UNIVARIABLES: Búsqueda dorada (Golden Section), interpolación cuadrática.\n7.2. MÉTODOS MULTIVARIABLES DE GRADIENTE: Métodos de descensu de gradiente (Gradient Descent), Newton-Raphson e cuasi-Newton (\\(BFGS\\)).\n7.3. MÉTODOS DIRECTOS (SEN DERIVADAS): Algoritmo de Nelder-Mead (Simplex) para funcións obxectivo procedentes de simuladores caixa negra.\n\n\n\nTema 8: Optimización Con Restricións\n\n8.1. CONDICIÓNS DE KARUSH-KUHN-TUCKER (\\(KKT\\)): Multiplicadores de Lagrange e condicións de optimización de primeiro e segundo orde.\n8.2. PROGRAMACIÓN CUADRÁTICA SECUENCIAL (\\(SQP\\)): Resolutores industriais para optimización con restricións asociadas a Aspen Plus.\n8.3. ALGORITMOS XENÉTICOS E ESTOCÁSTICOS: Algoritmos evolutivos para a optimización global en superficies con múltiples óptimos locais.\n\n\n\nTema 9: Integración Enerxética e Análise Pinch\n\n9.1. PRINCIPIOS DA INTEGRACIÓN ENERXÉTICA: Redución do consumo de utilidades quentes e frías nunha planta química.\n9.2. TECNOLOXÍA PINCH (PINCH ANALYSIS): Curvas compostas, curva gran composta (Grand Composite Curve) e identificación do punto Pinch.\n9.3. REQUISITO MÍNIMO DE ENERXÍA (MER): Requisito de utilidades e deseño de redes de intercambio de calor (\\(HEN\\)).\n9.4. SIMULACIÓN CON ASPEN ENERGY ANALYZER: Integración de ficheiros de simulación de Aspen Plus con Aspen Energy Analyzer."
+  },
+  {
+    "objectID": "guia-docente.html",
+    "href": "guia-docente.html",
+    "title": "Guía Docente Oficial",
+    "section": "",
+    "text": "Información oficial aprobada pola Xunta de Centro da Escola de Enxeñaría Industrial (EEI) da Universidade de Vigo."
+  },
+  {
+    "objectID": "guia-docente.html#datos-identificativos-da-materia",
+    "href": "guia-docente.html#datos-identificativos-da-materia",
+    "title": "Guía Docente Oficial",
+    "section": "📋 Datos Identificativos da Materia",
+    "text": "📋 Datos Identificativos da Materia\n\n\n\n\n\n\n\n\nParámetro\nDetalle Oficial\n\n\n\n\nMateria\nSimulación e optimización de procesos químicos (SOPQ)\n\n\nCódigo\nV12G350V01702\n\n\nTitulación\nGrao en Enxeñaría en Química Industrial\n\n\nCentro\nEscola de Enxeñaría Industrial (EEI), Universidade de Vigo\n\n\nTipo / Carácter\nOptativa de Especialidade\n\n\nCurso / Cuadrimestre\n4º Curso / 1º Cuadrimestre\n\n\nCréditos ECTS\n6 ECTS (150 horas totais)\n\n\nLingua Vehicular\nGalego / Castelán\n\n\nProfesor Responsable\nProf. Dr. Ángel Manuel Sánchez Bermúdez\n\n\nDepartamento\nEnxeñaría Química"
+  },
+  {
+    "objectID": "guia-docente.html#competencias-do-titulado",
+    "href": "guia-docente.html#competencias-do-titulado",
+    "title": "Guía Docente Oficial",
+    "section": "🎯 Competencias do Titulado",
+    "text": "🎯 Competencias do Titulado\nA materia contribúe ao desenvolvemento das seguintes competencias xerais e específicas do Grao en Enxeñaría en Química Industrial:\n\nCompetencias Xerais e Específicas (CG / CE)\n\nCG3: Capacidade para dirixir as actividades obxecto dos proxectos de enxeñaría descritos no ámbito da química industrial.\nCG4: Capacidade para realizar animacións, simulacións e resolución computacional de problemas complexos de transferencia de materia, calor e cantidade de movemento.\nCE20: Capacidade para o deseño, modelización, simulación e optimización de procesos químicos e os seus equipos de reacción e separación.\n\n\n\nCompetencias Transversais (CT)\n\nCT2: Resolución de problemas complexos e toma de decisións baseada en evidencias computacionais.\nCT6: Aplicación de tecnoloxías da información e comunicación (TIC) no ámbito da enxeñaría química.\nCT8: Capacidade de traballo en equipo autónomo e interdisciplinar.\nCT9: Aprendizaxe autónoma e actualización continua no manexo de software especializado.\nCT10: Capacidade para citar, documentar e xustificar rigorosamente o uso de ferramentas de Intelixencia Artificial e simuladores comerciais.\nCT17: Compromiso ético e responsabilidade profesional na validación de resultados de simulación."
+  },
+  {
+    "objectID": "guia-docente.html#distribución-de-horas-de-dedicación-150-h-totais",
+    "href": "guia-docente.html#distribución-de-horas-de-dedicación-150-h-totais",
+    "title": "Guía Docente Oficial",
+    "section": "⏱️ Distribución de Horas de Dedicación (150 h Totais)",
+    "text": "⏱️ Distribución de Horas de Dedicación (150 h Totais)\n\n\n\n🏫 Horas Presenciais (60 horas)\n\nClases de Teoría / Master (SD): 28 horas\nPrácticas en Aula Informática (TIC): 28 horas\nTitorías e Exame Presencial: 4 horas\n\n\n\n\n\n💻 Traballo Autónomo (90 horas)\n\nEstudio de Teoría e Termodinámica: 30 horas\nResolución de Problemas e Prácticas: 30 horas\nElaboración do Proxecto de Simulación: 30 horas"
+  },
+  {
+    "objectID": "guia-docente.html#bibliografía-oficial-recomendada",
+    "href": "guia-docente.html#bibliografía-oficial-recomendada",
+    "title": "Guía Docente Oficial",
+    "section": "📚 Bibliografía Oficial Recomendada",
+    "text": "📚 Bibliografía Oficial Recomendada\n\n\n\n\n\n\nNoteTextos de Referencia Principal\n\n\n\nOs seguintes manuais atópanse dispoñibles na Biblioteca Central do Campus de Vigo (EEI) e en acceso electrónico:\n\n\n\nAl-Malah, K. I. (2016). Aspen Plus: Chemical Engineering Applications. John Wiley & Sons. Hoboken, NJ.\n(Manual de referencia obrigatorio para as sesións TIC con Aspen Plus v14).\nHaydary, J. (2019). Chemical Process Design and Simulation: Aspen Plus and Aspen Hysys Applications. John Wiley & Sons.\n(Enfoque práctico para a modelización e síntese de esquemas de proceso).\nHimmelblau, D. M., & Riggs, J. B. (2012). Basic Principles and Calculations in Chemical Engineering (8th ed.). Prentice Hall.\n(Fundamento teórico dos balances de materia, enerxía e graos de liberdade).\nUpreti, S. R. (2017). Optimal Control in Chemical Engineering. CRC Press.\n(Fundamentos de optimización estática e dinámica de procesos químicos)."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Simulación e Optimización de Procesos Químicos",
+    "section": "",
+    "text": "Código: V12G350V01702 6 ECTS Curso 2026 / 2027 EEI - Universidade de Vigo\n\n\n\nPortal docente oficial da materia de referencia na modelización, dixitalización e optimización computacional de plantas de proceso químico na Escola de Enxeñaría Industrial.\n\n\n📅 Ver Cronograma 2026/2027 💻 Laboratorios TIC 📘 Guía Docente"
+  },
+  {
+    "objectID": "index.html#resumo-executivo-da-materia",
+    "href": "index.html#resumo-executivo-da-materia",
+    "title": "Simulación e Optimización de Procesos Químicos",
+    "section": "🚀 Resumo Executivo da Materia",
+    "text": "🚀 Resumo Executivo da Materia\n\n\n\n\n📍\n\n\nSede e Horarios\nSede Campus Maxwell nº 9\nAula Informática 5 (EEI)\nHorario Lectivo:\n• Martes: 10:00 - 12:00 h (Teoría)\n• Xoves: 10:00 - 12:00 h (Laboratorio TIC)\nConsulta o mapa e horarios →\n\n\n\n\n\n\n⚙️\n\n\nEcosistema Tecnolóxico\nSoftware Industrial de Vanguardia\n• Aspen Plus v14 & Aspen HYSYS\n• Aspen Energy Analyzer (Pinch)\n• DWSIM (Open Source Flowsheeting)\n• Python-COM (win32com, scipy.optimize, pyomo)\nExplora o catálogo de prácticas →\n\n\n\n\n\n\n🎯\n\n\nSistema de Avaliación\nCualificación Continua & Liderado\n• Exame Presencial Final: 40%\n• Proxecto Personalizado: 40%\n• Prácticas de Simulación: 10%\n• Problemas Autónomos: 10%\nVer criterios e Anexo IA →"
+  },
+  {
+    "objectID": "index.html#bloques-temáticos-principais",
+    "href": "index.html#bloques-temáticos-principais",
+    "title": "Simulación e Optimización de Procesos Químicos",
+    "section": "📚 Bloques Temáticos Principais",
+    "text": "📚 Bloques Temáticos Principais\n\n\n\n🔷 Bloque 1: Simulación de Procesos Químicos (Temas 1 - 5)\nEstudo en profundidade da arquitectura computacional dos simuladores industriais: - Paradigmas & Digital Twins: Introdución á dixitalización de plantas industriais. - Arquitecturas Sequential Modular (SM) vs. Equation Oriented (EO): Particionamento, ordenación de grafos (Tarjan/Sargent-Westerberg) e converxencia de reciclos (Wegstein, Broyden). - Graos de Liberdade & Design Specs: Ecuacións, variables e especificacións de deseño. - Termodinámica Computacional: Selección rigorosa de modelos de propiedades (\\(NRTL\\), \\(UNIQUAC\\), \\(UNIFAC\\), \\(Peng-Robinson\\), Electrólitos). - Operacións de Separación e Reactores: Modelización de columnas de destilación, extracción e reactores stoichiometry/kinetic/equilibrium.\n\n\n\n\n🔶 Bloque 2: Optimización de Procesos Químicos (Temas 6 - 9)\nFormulación e resolución numérica de problemas de optimización formulados sobre plantas de proceso: - Fundamentos & Formulación Matemática: Problemas \\(NLP\\) e \\(MINLP\\) en enxeñaría química. - Optimización Sen Restricións: Métodos directos e de gradiente (Gradient Descent, BFGS, Nelder-Mead). - Optimización Con Restricións: Condicións de Karush-Kuhn-Tucker (\\(KKT\\)), \\(SQP\\) e algoritmos xenéticos. - Integración Enerxética (Pinch Analysis): Cálculo da MER (Minimum Energy Requirement), diagramas de intervalos de temperatura e redes de intercambio de calor (\\(HEN\\))."
+  },
+  {
+    "objectID": "index.html#últimas-novidades-e-publicacións-do-blog",
+    "href": "index.html#últimas-novidades-e-publicacións-do-blog",
+    "title": "Simulación e Optimización de Procesos Químicos",
+    "section": "📢 Últimas Novidades e Publicacións do Blog",
+    "text": "📢 Últimas Novidades e Publicacións do Blog\n\n\n\n\n\n\n\n\nTema 4: Termodinámica Computacional e Selección de Modelos de Propiedades\n\n\nÁrbores de decisión (Carlson), Peng-Robinson vs NRTL/UNIQUAC, UNIFAC, electrólitos e compoñentes biorenovables\n\n2 min\n\n\nTermodinámica\n\nNRTL\n\nPeng-Robinson\n\nUNIFAC\n\nElectrólitos\n\nTema 4\n\n\n\n\nOct 20, 2026\n\n\n\n\n\n\n\n\n\n\n\nTema 3: Graos de Liberdade e Especificacións de Deseño (Design Specs)\n\n\nAnálise sistemática de graos de liberdade en plantas químicas, prevención de sobreespecificación e implementación de Design Specs en Aspen Plus\n\n3 min\n\n\nGraos de Liberdade\n\nDesign Specs\n\nSolución de Inconsistencias\n\nTema 3\n\n\n\n\nOct 13, 2026\n\n\n\n\n\n\n\n\n\n\n\nTema 2: Arquitectura SM vs EO, Grafos e Métodos de Reciclo\n\n\nParticionamento topolóxico (Tarjan), selección de correntes de corte e converxencia numérica con Wegstein e Broyden\n\n3 min\n\n\nArquitectura SM/EO\n\nGrafos\n\nReciclos\n\nWegstein\n\nBroyden\n\nTema 2\n\n\n\n\nSep 29, 2026\n\n\n\n\n\n\n\n\n\n\n\nTema 1: Paradigmas Actuais, Digital Twins e Interface Python-COM\n\n\nDixitalización en enxeñaría química, xemelgos dixitais de plantas e automatización de Aspen Plus via COM API\n\n3 min\n\n\nSimulación\n\nDigital Twins\n\nPython-COM\n\nTema 1\n\n\n\n\nSep 22, 2026\n\n\n\n\n\n\nNo matching items\n\n\nVer tódalas entradas do blog →"
+  },
+  {
+    "objectID": "blog/posts/tema-3/index.html",
+    "href": "blog/posts/tema-3/index.html",
+    "title": "Tema 3: Graos de Liberdade e Especificacións de Deseño (Design Specs)",
+    "section": "",
+    "text": "Determinación estricta de variables e control computacional de especificacións de proceso."
+  },
+  {
+    "objectID": "blog/posts/tema-3/index.html#formulación-matemática-dos-graos-de-liberdade-gl",
+    "href": "blog/posts/tema-3/index.html#formulación-matemática-dos-graos-de-liberdade-gl",
+    "title": "Tema 3: Graos de Liberdade e Especificacións de Deseño (Design Specs)",
+    "section": "1. Formulación Matemática dos Graos de Liberdade (\\(GL\\))",
+    "text": "1. Formulación Matemática dos Graos de Liberdade (\\(GL\\))\nPara un elemento de proceso químico con \\(C\\) compoñentes e \\(P\\) fases, a regra das fases de Gibbs establece:\n\\[GL = C - P + 2\\]\nPara un sistema completo formado por \\(M\\) módulos interconectados:\n\\[GL_{total} = \\sum_{i=1}^{M} GL_i - N_{variables\\_enlace}\\]\n\n\n\n\n\n\n\n\n\nCondición de \\(GL\\)\nDiagnóstico Técnico\nAccion Correctora\n\n\n\n\n\\(GL = 0\\)\nSistema Ben Especificado: Número de ecuacións igual ao número de variables.\nProceder ao cálculo e resolución do sistema.\n\n\n\\(GL &gt; 0\\)\nSistema Subespecificado: Faltan especificacións operativas ou de deseño.\nEngadir especificacións (temperatura, refluxo, caudais).\n\n\n\\(GL &lt; 0\\)\nSistema Sobreespecificado: Liñas de cálculo redundantes ou incompatibles.\nEliminar especificacións redundantes para evitar erros de converxencia."
+  },
+  {
+    "objectID": "blog/posts/tema-3/index.html#implementación-de-design-specs-en-aspen-plus",
+    "href": "blog/posts/tema-3/index.html#implementación-de-design-specs-en-aspen-plus",
+    "title": "Tema 3: Graos de Liberdade e Especificacións de Deseño (Design Specs)",
+    "section": "2. Implementación de Design Specs en Aspen Plus",
+    "text": "2. Implementación de Design Specs en Aspen Plus\nUnha Design Spec actúa como un controlador de bucle pechado dentro do simulador:\n[Variable Obxectivo (Target)] &lt;--- Comparación &lt;--- [Especificación desexada (ex: Puridade = 99.5%)]\n          |                                                       |\n          +---&gt; Axuste iterativo da [Variable Manipulada (Manipulated)]\n\nCódigo de Exemplo en Script Aspen-Syntax:\nDESIGN-SPEC PURIDAD1\n    DEFINE XETANOL MOLE-FRAC STREAM=DISTIL BLOCK=RADFRAC1 SUBSTREAM=MIXED COMPS=ETHANOL\n    SPEC \"XETANOL\" TO \"0.995\"\n    TOLERANCE \"0.0001\"\n    VARY BLOCK-VAR BLOCK=RADFRAC1 VARIABLE=REFLUX-RATIO\n    LIMITS \"1.2\" \"8.0\""
+  },
+  {
+    "objectID": "blog/posts/tema-3/index.html#material-de-apoio",
+    "href": "blog/posts/tema-3/index.html#material-de-apoio",
+    "title": "Tema 3: Graos de Liberdade e Especificacións de Deseño (Design Specs)",
+    "section": "🎧 Material de Apoio",
+    "text": "🎧 Material de Apoio\n\n💡 Recurso Docente: Descarga a folla de exercicios de cálculo de graos de liberdade no portal oficial NotebookLM SOPQ Tema 3."
+  },
+  {
+    "objectID": "blog/posts/tema-1/index.html",
+    "href": "blog/posts/tema-1/index.html",
+    "title": "Tema 1: Paradigmas Actuais, Digital Twins e Interface Python-COM",
+    "section": "",
+    "text": "Evolución computacional da enxeñaría química e conexión automatizada via Python-COM."
+  },
+  {
+    "objectID": "blog/posts/tema-1/index.html#evolución-histórica-e-paradigmas-computacionais",
+    "href": "blog/posts/tema-1/index.html#evolución-histórica-e-paradigmas-computacionais",
+    "title": "Tema 1: Paradigmas Actuais, Digital Twins e Interface Python-COM",
+    "section": "1. Evolución Histórica e Paradigmas Computacionais",
+    "text": "1. Evolución Histórica e Paradigmas Computacionais\nA modelización en enxeñaría química sufriu tres revolucións fundamentais:\n\nEra Analóxica e Monografías (Pre-1960): Cálculo de liñas de destilación mediante diagramas de McCabe-Thiele debuxados a man.\nEra dos Simuladores Modular-Secuenciais (1970 - 2000): Aparición de FLOWTRAN, Aspen Plus e HYSYS para resolver diagramas de fluxo enteiros.\nEra Dixital e Digital Twins (2010 - Actualidade): Integración de modelos baseados na física con estratexias de Machine Learning e telemetría en tempo real mediante protocolos IoT industriais.\n\ngraph LR\n    A[\"Telemetría de Planta (SCADA / IoT)\"] --&gt; B[\"Filtro de Datos (Kalman / Reconciliation)\"]\n    B --&gt; C[\"Xemelgo Dixital (Aspen Plus / DWSIM)\"]\n    C --&gt; D[\"Optimización en Tempo Real (RTO)\"]\n    D --&gt; A"
+  },
+  {
+    "objectID": "blog/posts/tema-1/index.html#configuración-da-interface-python-com",
+    "href": "blog/posts/tema-1/index.html#configuración-da-interface-python-com",
+    "title": "Tema 1: Paradigmas Actuais, Digital Twins e Interface Python-COM",
+    "section": "2. Configuración da Interface Python-COM",
+    "text": "2. Configuración da Interface Python-COM\nA comunicación entre Python e Aspen Plus prodúcese a través da interface Component Object Model (COM) de Microsoft Windows. O paquete win32com.client permite instanciar o servidor de automatización de Aspen:\nimport win32com.client\nimport os\n\n# Instanciar o servidor de automatización de Aspen Plus\naspen = win32com.client.Dispatch(\"Apwn.Document\")\n\n# Cargar un ficheiro de simulación existente (.bkp ou .apw)\nfile_path = os.path.abspath(\"planta_destilacion.bkp\")\naspen.InitFromArchive2(file_path)\n\n# Tornar a aplicación visible para depuración\naspen.Visible = True\n\n# Acceder á árbore de variables e ler a temperatura dunha corrente\ntemp_alimento = aspen.Tree.FindNode(r\"\\Data\\Streams\\ALIM\\Output\\TEMP_OUT\\MIXED\").Value\nprint(f\"Temperatura da corrente de alimento: {temp_alimento:.2f} K\")\n\n# Executar a simulación\naspen.Engine.Run2()\n\nprint(\"Simulación executada con éxito via Python-COM!\")"
+  },
+  {
+    "objectID": "blog/posts/tema-1/index.html#pílula-de-audio-notebooklm-material-audiovisual",
+    "href": "blog/posts/tema-1/index.html#pílula-de-audio-notebooklm-material-audiovisual",
+    "title": "Tema 1: Paradigmas Actuais, Digital Twins e Interface Python-COM",
+    "section": "🎧 Pílula de Audio NotebookLM & Material Audiovisual",
+    "text": "🎧 Pílula de Audio NotebookLM & Material Audiovisual\n\n\n\n🎙️\n\nPodcast Técnico NotebookLM: Digital Twins en Enxeñaría Química\nResumo en formato de diálogo profundizando nos retos de sincronización de datos de planta.\n\n\n\nO teu navegador non soporta o elemento de audio. \n\n💡 Recurso de Estudo: Consulta o caderno de traballo interactivo en NotebookLM SOPQ Tema 1.\n\n:::"
+  },
+  {
+    "objectID": "avaliacion.html",
+    "href": "avaliacion.html",
+    "title": "Sistema de Avaliación e Anexo de IA",
+    "section": "",
+    "text": "Rigor académico, liderado enxeñeril e regulación ética do uso de ferramentas de IA xerativa."
+  },
+  {
+    "objectID": "avaliacion.html#ponderación-e-criterios-de-cualificación",
+    "href": "avaliacion.html#ponderación-e-criterios-de-cualificación",
+    "title": "Sistema de Avaliación e Anexo de IA",
+    "section": "📊 Ponderación e Criterios de Cualificación",
+    "text": "📊 Ponderación e Criterios de Cualificación\nA avaliación do aprendizaxe estructúrase garantindo o equilibrio entre os coñecementos teóricos rigorosos e as competencias computacionais aplicadas:\n\n\n\n\n📝\n\n\n40%\nExame Presencial Final\nProba escrita e práctica individual de resolución de problemas e simulación en aula informática.\n\n\n\n\n\n\n💻\n\n\n40%\nProxecto Personalizado\nDeseño, simulación e optimización rigorosa duna planta química asignada individualmente.\n\n\n\n\n\n\n⚙️\n\n\n10%\nPrácticas de Simulación\nAsistencia, execución e informes breves das 12 sesións TIC na Aula Informática 5.\n\n\n\n\n\n\n📑\n\n\n10%\nProblemas Autónomos\nResolución autónoma e entrega de entregables programados ao longo do cuadrimestre.\n\n\n\n\n\n\n\n\n\n\nWarningCondición de Aprobado\n\n\n\nPara superar a materia na convocatoria continua ou extraordinaria, é requisito imprescindible obter unha nota mínima de 4,0 sobre 10 tanto no Exame Presencial Final como no Proxecto Personalizado."
+  },
+  {
+    "objectID": "avaliacion.html#anexo-de-trazabilidade-da-intelixencia-artificial-obrigatorio",
+    "href": "avaliacion.html#anexo-de-trazabilidade-da-intelixencia-artificial-obrigatorio",
+    "title": "Sistema de Avaliación e Anexo de IA",
+    "section": "🤖 Anexo de Trazabilidade da Intelixencia Artificial (Obrigatorio)",
+    "text": "🤖 Anexo de Trazabilidade da Intelixencia Artificial (Obrigatorio)\nComo parte do compromiso da Escola de Enxeñaría Industrial coa excelencia e o liderado enxeñeril na era dixital, na materia SOPQ autorízase e incentívase o uso ético e crítico de asistentes de Intelixencia Artificial (ChatGPT, Gemini, Claude, GitHub Copilot) baixo as seguintes normas estritas:\n\n📜 Principios Fundamentais da Trazabilidade de IA\n\nResponsabilidade Enxeñeril Absoluta: O alumno é o único responsable da veracidade, exactitude física e rigor termodinámico de todos os datos, scripts e cálculos presentados. As alucinacións ou erros xerados pola IA non xustifican fallos enxeñerís.\nUso Como Co-piloto, Non Como Substituto: A IA debe empregarse para optimizar código, buscar documentación ou explorar alternativas, nunca para a xeración automática sen revisión do traballo a entregar.\nDeclaración Obrigatoria no Anexo: Calquera entregable (memoria de proxecto, caderno Jupyter ou informe de laboratorio) que empregue IA DEBE incluír obrigatoriamente a Táboa de Trazabilidade da IA ao final do documento.\n\n\n\n📋 Modelo de Táboa de Trazabilidade da IA\nTodo traballo entregado debe incorporar unha táboa homologada segundo a seguinte estrutura:\n\n\n\n\n\n\n\n\n\n\n\n\nSeccion / Tarefa\nFerramenta IA Empregada\nPrompt / Consulta Exacta\nResumo da Resposta Xerada\nVerificación e Crítica Enxeñeril Humana\nModificación Aplicada no Entregable Final\n\n\n\n\nScript Python Práctica 3\nChatGPT-4o\n“Como implementar a aceleración de Wegstein para un reciclo multivariable en SciPy?”\nProporcionou unha función con bucle while e factor de aceleración \\(q\\).\nDetectouse que o factor \\(q\\) non tiña límites, o que provocaba diverxencia térmica.\nAdicionouse un delimitador no factor \\(q \\in [-5, 0.95]\\) segundo o manual de Aspen.\n\n\nModelo Termodinámico Tema 4\nClaude 3.5 Sonnet\n“Cal é a diferenza entre NRTL e UNIQUAC para esterificacións?”\nRecomendou UNIQUAC indicando falta de parámetros binarios en NRTL.\nVerificouse na base de datos de Aspen Plus v14 e constatouse que NRTL si dispón de parámetros binarios.\nMantívose o modelo NRTL xustificando a decisión con datos experimentais de VLE.\n\n\n\n\n\n\n\n\n\n\nImportantDeclaración Ética Obrigatoria ao Final dos Entregables\n\n\n\n“Declaro que o traballo presentado é froito do meu desenvolvemento intelectual e enxeñeril. As ferramentas de IA indicadas na táboa anterior foron empregadas exclusivamente como apoio documental e técnico, habendo revisado, validado e asumido a totalidade dos resultados e opinións contidas neste documento.”"
+  }
+]

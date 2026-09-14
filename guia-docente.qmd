@@ -1,0 +1,95 @@
+---
+title: "Guía Docente Oficial"
+subtitle: "Materia: Simulación e Optimización de Procesos Químicos (Código: V12G350V01702)"
+---
+
+::: {.hero-banner}
+::: {.hero-content}
+<h2 class="text-white fw-bold mb-2">📘 Guía Docente e Ficha Técnica</h2>
+<p class="text-light mb-0">Información oficial aprobada pola Xunta de Centro da Escola de Enxeñaría Industrial (EEI) da Universidade de Vigo.</p>
+:::
+:::
+
+## 📋 Datos Identificativos da Materia
+
+::: {.schedule-table-wrapper}
+
+| Parámetro | Detalle Oficial |
+|:---|:---|
+| **Materia** | Simulación e optimización de procesos químicos (SOPQ) |
+| **Código** | V12G350V01702 |
+| **Titulación** | Grao en Enxeñaría en Química Industrial |
+| **Centro** | Escola de Enxeñaría Industrial (EEI), Universidade de Vigo |
+| **Tipo / Carácter** | Optativa de Especialidade |
+| **Curso / Cuadrimestre** | 4º Curso / 1º Cuadrimestre |
+| **Créditos ECTS** | 6 ECTS (150 horas totais) |
+| **Lingua Vehicular** | Galego / Castelán |
+| **Profesor Responsable** | Prof. Dr. Ángel Manuel Sánchez Bermúdez |
+| **Departamento** | Enxeñaría Química |
+
+:::
+
+---
+
+## 🎯 Competencias do Titulado
+
+A materia contribúe ao desenvolvemento das seguintes competencias xerais e específicas do Grao en Enxeñaría en Química Industrial:
+
+### Competencias Xerais e Específicas (CG / CE)
+
+* **CG3**: Capacidade para dirixir as actividades obxecto dos proxectos de enxeñaría descritos no ámbito da química industrial.
+* **CG4**: Capacidade para realizar animacións, simulacións e resolución computacional de problemas complexos de transferencia de materia, calor e cantidade de movemento.
+* **CE20**: Capacidade para o deseño, modelización, simulación e optimización de procesos químicos e os seus equipos de reacción e separación.
+
+### Competencias Transversais (CT)
+
+* **CT2**: Resolución de problemas complexos e toma de decisións baseada en evidencias computacionais.
+* **CT6**: Aplicación de tecnoloxías da información e comunicación (TIC) no ámbito da enxeñaría química.
+* **CT8**: Capacidade de traballo en equipo autónomo e interdisciplinar.
+* **CT9**: Aprendizaxe autónoma e actualización continua no manexo de software especializado.
+* **CT10**: Capacidade para citar, documentar e xustificar rigorosamente o uso de ferramentas de Intelixencia Artificial e simuladores comerciais.
+* **CT17**: Compromiso ético e responsabilidade profesional na validación de resultados de simulación.
+
+---
+
+## ⏱️ Distribución de Horas de Dedicación (150 h Totais)
+
+::: {.row .g-4 .my-3}
+
+::: {.col-md-6}
+::: {.glass-card}
+### 🏫 Horas Presenciais (60 horas)
+- **Clases de Teoría / Master (SD):** 28 horas
+- **Prácticas en Aula Informática (TIC):** 28 horas
+- **Titorías e Exame Presencial:** 4 horas
+:::
+:::
+
+::: {.col-md-6}
+::: {.glass-card}
+### 💻 Traballo Autónomo (90 horas)
+- **Estudio de Teoría e Termodinámica:** 30 horas
+- **Resolución de Problemas e Prácticas:** 30 horas
+- **Elaboración do Proxecto de Simulación:** 30 horas
+:::
+:::
+
+:::
+
+---
+
+## 📚 Bibliografía Oficial Recomendada
+
+::: {.callout-note icon=true}
+## Textos de Referencia Principal
+Os seguintes manuais atópanse dispoñibles na Biblioteca Central do Campus de Vigo (EEI) e en acceso electrónico:
+:::
+
+1. **Al-Malah, K. I.** (2016). *Aspen Plus: Chemical Engineering Applications*. John Wiley & Sons. Hoboken, NJ.  
+   *(Manual de referencia obrigatorio para as sesións TIC con Aspen Plus v14).*
+2. **Haydary, J.** (2019). *Chemical Process Design and Simulation: Aspen Plus and Aspen Hysys Applications*. John Wiley & Sons.  
+   *(Enfoque práctico para a modelización e síntese de esquemas de proceso).*
+3. **Himmelblau, D. M., & Riggs, J. B.** (2012). *Basic Principles and Calculations in Chemical Engineering* (8th ed.). Prentice Hall.  
+   *(Fundamento teórico dos balances de materia, enerxía e graos de liberdade).*
+4. **Upreti, S. R.** (2017). *Optimal Control in Chemical Engineering*. CRC Press.  
+   *(Fundamentos de optimización estática e dinámica de procesos químicos).*

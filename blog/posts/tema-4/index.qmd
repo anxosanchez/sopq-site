@@ -1,0 +1,87 @@
+---
+title: "Tema 4: Termodinámica Computacional e Selección de Modelos de Propiedades"
+subtitle: "Árbores de decisión (Carlson), Peng-Robinson vs NRTL/UNIQUAC, UNIFAC, electrólitos e compoñentes biorenovables"
+date: "2026-10-20"
+author: "Prof. Ángel Manuel Sánchez Bermúdez"
+categories: [Termodinámica, NRTL, Peng-Robinson, UNIFAC, Electrólitos, Tema 4]
+---
+
+::: {.hero-banner}
+::: {.hero-content}
+<h2 class="text-white fw-bold mb-2">🧪 Tema 4: Termodinámica Computacional</h2>
+<p class="text-light mb-0">Selección rigorosa de ecuacións de estado e modelos de coeficientes de actividade.</p>
+:::
+:::
+
+::: {.trilingual-summary}
+::: {.trilingual-header}
+🌐 Resumo Executivo Trilingüe / Trilingual Executive Summary
+:::
+
+::: {.lang-block}
+<span class="lang-flag">Galego (Vehicular)</span>
+O Tema 4 é a columna vertebral da simulación rigorosa. Estúdase a árbore de decisión termodinámica de Carlson para seleccionar entre Ecuacións de Estado ($Peng-Robinson$, $SRK$) e Modelos de Coeficientes de Actividade ($NRTL$, $UNIQUAC$, $UNIFAC$). Analízase a modelización de sistemas polares, electrólitos (ElecNTRL) e mezclas biorenovables non convencionais.
+:::
+
+::: {.lang-block}
+<span class="lang-flag">Castelán (Español)</span>
+El Tema 4 es la columna vertebral de la simulación rigurosa. Se estudia el árbol de decisión termodinámico de Carlson para seleccionar entre Ecuaciones de Estado ($Peng-Robinson$, $SRK$) y Modelos de Coeficientes de Actividad ($NRTL$, $UNIQUAC$, $UNIFAC$). Se analiza la modelización de sistemas polares, electrolitos y mezclas biorenovables.
+:::
+
+::: {.lang-block}
+<span class="lang-flag">Inglés (English)</span>
+Topic 4 serves as the thermodynamic foundation of process flowsheeting. Carlson's decision tree is used to navigate between Equations of State ($Peng-Robinson$, $SRK$) and Activity Coefficient models ($NRTL$, $UNIQUAC$, $UNIFAC$). Modeling techniques for polar fluids, electrolyte solutions (ElecNTRL), and biorenewable mixtures are thoroughly detailed.
+:::
+:::
+
+---
+
+## 1. Árbore de Decisión Termodinámica (Carlson Decision Tree)
+
+A elección incorrecta do modelo de propiedades é a causa principal do fallo de simulacións industriais.
+
+```mermaid
+graph TD
+    A["¿Sistemas Polares ou No Polares?"] -->|No Polares| B["¿Presión P > 10 bar?"]
+    A -->|Polares| C["¿Existen datos de equilibrio VLE?"]
+    
+    B -->|Si| D["Peng-Robinson / SRK"]
+    B -->|Non| E["Chao-Seader / Grayson-Streed"]
+    
+    C -->|Si| F["NRTL / UNIQUAC / Wilson"]
+    C -->|Non| G["UNIFAC (Contribución por grupos)"]
+```
+
+---
+
+## 2. Formulaciones Principales
+
+### Ecuación de Estado de Peng-Robinson ($EOS$)
+
+$$P = \frac{R T}{V_m - b} - \frac{a(T)}{V_m^2 + 2bV_m - b^2}$$
+
+Axeitada para hidrocarburos, gases disoltos e condicións supercriticals a alta presión.
+
+### Modelo $NRTL$ (Non-Random Two-Liquid)
+
+$$\ln \gamma_i = \frac{\sum_j \tau_{ji} G_{ji} x_j}{\sum_k G_{ki} x_k} + \sum_j \frac{x_j G_{ij}}{\sum_k G_{kj} x_k} \left( \tau_{ij} - \frac{\sum_m x_m \tau_{mj} G_{mj}}{\sum_k G_{kj} x_k} \right)$$
+
+Onde $G_{ij} = \exp(-\alpha_{ij} \tau_{ij})$. Ideal para mezclas líquidas altamente polares, azeotrópicas e inmiscibles a baixa/media presión.
+
+---
+
+## 🎧 Audio e Material NotebookLM
+
+::: {.media-container}
+::: {.media-header}
+::: {.media-icon}
+🎙️
+:::
+<div>
+  <h4 class="media-title">Podcast NotebookLM: Selección Termodinámica e Erros Frecuentes</h4>
+  <small class="text-muted">Como evitar catástrofes de simulación escollendo o modelo termodinámico correcto.</small>
+</div>
+:::
+
+Accede ao caderno completo e simulador interactivo de coeficientes de actividade en [NotebookLM SOPQ Tema 4](https://notebooklm.google.com).
+:::

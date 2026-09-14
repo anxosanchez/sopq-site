@@ -1,0 +1,152 @@
+---
+title: "Catálogo de Laboratorios TIC"
+subtitle: "As 12 sesións prácticas en aula informática con software industrial especializado"
+---
+
+::: {.hero-banner}
+::: {.hero-content}
+<h2 class="text-white fw-bold mb-2">💻 Prácticas de Computación na Aula Informática 5</h2>
+<p class="text-light mb-0">Manexo profesional de Aspen Plus, Aspen HYSYS, Aspen Energy Analyzer, DWSIM e integración con Python-COM.</p>
+:::
+:::
+
+::: {.callout-note icon=true}
+## Software Dispoñible nas Estacións da Aula Inf. 5
+Todas as estacións de traballo contan coas licenzas universitarias oficiais da suite **AspenTech v14**, o simulador de código aberto **DWSIM 8** e un contorno **Python 3.12** preconfigurado cos paquetes `pywin32`, `scipy`, `numpy`, `matplotlib` e `pyomo`.
+:::
+
+---
+
+## 🛠️ Catálogo Completo das 12 Sesións TIC
+
+::: {.glass-card #práctica-1}
+### Práctica 1: Configuración do Contorno Python-COM e Primeiros Pasos
+* **Obxectivo:** Configurar o contorno de desenvolvemento en Python e establecer a comunicación via protocolo COM/OLE con Microsoft Excel e Aspen Plus.
+* **Software:** Python 3.12, Anaconda Jupyter, `win32com.client`.
+* **Fluxo de Traballo:**
+  1. Verificación das bibliotecas `win32com` e rexistro de DLLs de AspenTech.
+  2. Creación dun script de proba para automatizar a apertura e peche da instancia de Aspen Plus en segundo plano (`AspenPlus.Document`).
+  3. Lectura e escritura de variables de entrada/saída en correntes de proceso.
+* **Entregable:** Caderno Jupyter `.ipynb` coa función de conexión e informe de verificación.
+:::
+
+::: {.glass-card #práctica-2}
+### Práctica 2: Particionamento e Ordenación de Grafos (Algoritmo de Tarjan)
+* **Obxectivo:** Implementar en Python o particionamento de diagramas de fluxo de procesos ($PFD$) para identificar compoñentes fortemente conexas e ordenación topolóxica.
+* **Software:** Python, `networkx`, `matplotlib`.
+* **Fluxo de Traballo:**
+  1. Formulación da matriz de adxacencia para un PFD industrial con 3 bucles de reciclo interconectados.
+  2. Execución do algoritmo de Tarjan para descompoñer o grafo en bloques calculables de xeito secuencial.
+  3. Determinación do conxunto mínimo de correntes de corte (*tear streams*).
+* **Entregable:** Script en Python que reciba unha matriz de conexións e devolva a orde de cálculo óptima.
+:::
+
+::: {.glass-card #práctica-3}
+### Práctica 3: Algoritmos de Converxencia de Reciclos (Wegstein vs. Broyden)
+* **Obxectivo:** Programar e comparar a rapidez de converxencia dos métodos de Substitución Directa, Wegstein acelerado e Broyden nun reciclo complexo.
+* **Software:** Python, `scipy.optimize`.
+* **Fluxo de Traballo:**
+  1. Definición das ecuacións de masa e enerxía nun divisor/misturador con reactor e reciclo.
+  2. Implementación da función de erro de reciclo $f(x) = x_{calculado} - x_{asumido} = 0$.
+  3. Comparativa de iteracións e gráfica de converxencia entre Wegstein e Broyden.
+* **Entregable:** Informe comparativo de converxencia e gráfica de iteracións.
+:::
+
+::: {.glass-card #práctica-4}
+### Práctica 4: Análise de Graos de Liberdade e Design Specs en Aspen Plus
+* **Obxectivo:** Analizar rigorosamente os graos de liberdade ($GL$) dunha liña de proceso e resolver especificaciones de deseño (*Design Specs*).
+* **Software:** Aspen Plus v14.
+* **Fluxo de Traballo:**
+  1. Construción do PFD en Aspen Plus para o proceso de separación de alcoholes.
+  2. Conteo manual vs. automático de graos de liberdade ($GL = C - P + 2$).
+  3. Configuración dunha *Design Spec* para fixar a puridade de fondo dunha columna manipulando o refluxo.
+* **Entregable:** Ficheiro de Aspen Plus `.bkp` e táboa de especificacións.
+:::
+
+::: {.glass-card #práctica-5}
+### Práctica 5: Selección e Estimación de Parámetros Termodinámicos
+* **Obxectivo:** Utilizar a árbore de decisión de Carlson para seleccionar o modelo de propiedades axeitado e estimar parámetros de interacción binaria.
+* **Software:** Aspen Properties / Aspen Plus v14.
+* **Fluxo de Traballo:**
+  1. Comparación entre os modelos $NRTL$, $UNIQUAC$ e $Peng-Robinson$ para o sistema auga-etanol-isopropanol.
+  2. Regresión de datos experimentais $VLE$ (Equilibrio Vapor-Líquido) para determinar coeficientes binarios $a_{ij}, b_{ij}$.
+  3. Validar co modelo de predición de contribució por grupos $UNIFAC$.
+* **Entregable:** Diagramas de fase $y-x$ e $P-x-y$ comparando datos experimentais e regresionados.
+:::
+
+::: {.glass-card #práctica-6}
+### Práctica 6: Simulación de Operacións Flash e Extracción en DWSIM
+* **Obxectivo:** Construír e resolver a mesma liña de proceso flash e extracción líquido-líquido en DWSIM (Open Source) e Aspen Plus.
+* **Software:** DWSIM 8, Aspen Plus v14.
+* **Fluxo de Traballo:**
+  1. Simulación dunha separación flash tres fases ($V-L-L$) en DWSIM.
+  2. Comprobación da desviación nos balances de enerxía e composicións dos dous simuladores.
+  3. Análise dos tempos de cálculo e estabilidade numérica dos algortimos.
+* **Entregable:** Cadre comparativo de resultados DWSIM vs. Aspen Plus.
+:::
+
+::: {.glass-card #práctica-7}
+### Práctica 7: Columnas de Destilación Rigorosa (RadFrac) e Análise de Sensibilidade
+* **Obxectivo:** Simular unha columna de destilación multicompoñente rigorosa con RadFrac e realizar análises de sensibilidade.
+* **Software:** Aspen Plus v14 (RadFrac).
+* **Fluxo de Traballo:**
+  1. Especificación de platos, alimentación, razón de refluxo e destilado en RadFrac.
+  2. Análise de sensibilidade (*Sensitivity Tool*) variando o plato de alimentación e a presión da columna.
+  3. Optimización da etapa de alimentación para minimizar o consumo térmico no rebullidor.
+* **Entregable:** Gráficas de perfil de temperatura e composición ao longo da columna.
+:::
+
+::: {.glass-card #práctica-8}
+### Práctica 8: Reactores Químicos RPlug e RCSTR en Aspen HYSYS
+* **Obxectivo:** Simular a cinética de síntese do metanol ou hidrocarburos nun reactor PFR con ecuacións de taxa de reacción complexas.
+* **Software:** Aspen HYSYS v14.
+* **Fluxo de Traballo:**
+  1. Introdución da expresión cinética de Langmuir-Hinshelwood no conxunto de reaccións de HYSYS.
+  2. Simulación dun reactor tubular adiabático vs. isotermo.
+  3. Acoplamento do reactor coa liña de separación e reciclo de reactivos non convertidos.
+* **Entregable:** Perfiles de conversión e temperatura lonxitudinal do reactor.
+:::
+
+::: {.glass-card #práctica-9}
+### Práctica 9: Control e Automatización Avanzada via Python-COM
+* **Obxectivo:** Controlar Aspen Plus en bucle pechado dende un script externo de Python.
+* **Software:** Python 3.12, Aspen Plus v14, `win32com`.
+* **Fluxo de Traballo:**
+  1. Conexión de Python á árbore de variables de Aspen Plus (`\Data\Blocks\B1\Input\FRAC`).
+  2. Bucle de automatización para executar 50 casos de simulación modificando condicións de entrada.
+  3. Extracción automática de resultados e gardado en dataframe de `pandas` e ficheiro Excel.
+* **Entregable:** Script de automatización e ficheiro `.csv` cos 50 casos executados.
+:::
+
+::: {.glass-card #práctica-10}
+### Práctica 10: Optimización Sen Restricións de Procesos en SciPy / Pyomo
+* **Obxectivo:** Formular e resolver a optimización económica dun reactor CSTR usando os algoritmos Nelder-Mead e BFGS.
+* **Software:** Python (`scipy.optimize`, `pyomo`).
+* **Fluxo de Traballo:**
+  1. Formulación da función de beneficio económico $F(V, T) = Venda_{Produtos} - Custo_{Reactivos} - Custo_{Enerxía}$.
+  2. Resolución con `scipy.optimize.minimize` empregando o método de Nelder-Mead (caixa negra).
+  3. Comparación dos resultados co método BFGS baseado en gradientes analíticos.
+* **Entregable:** Caderno `.ipynb` coa gráfica 3D da superficie de beneficio e o punto óptimo.
+:::
+
+::: {.glass-card #práctica-11}
+### Práctica 11: Optimización de Plantas con Restricións (SQP en Aspen Optimizer)
+* **Obxectivo:** Resolver problemas de optimización con restricións operativas e de calidade mediante o algoritmo SQP.
+* **Software:** Aspen Plus v14 (Model Analysis Tools - Optimization).
+* **Fluxo de Traballo:**
+  1. Definición da función obxectivo económica no módulo de optimización de Aspen Plus.
+  2. Introdución de restricións de desigualdade (temperatura máxima no reactor, pureza mínima no produto).
+  3. Execución do algoritmo SQP (*Sequential Quadratic Programming*) e análise de sensibilidade dos multiplicadores de Lagrange.
+* **Entregable:** Informe do optimizador de Aspen Plus con táboa de variables de decisión e restricións activas.
+:::
+
+::: {.glass-card #práctica-12}
+### Práctica 12: Análise Pinch e Deseño de Redes HEN con Aspen Energy Analyzer
+* **Obxectivo:** Realizar a integración enerxética dunha planta química completa e deseñar a rede de intercambiadores de calor (HEN).
+* **Software:** Aspen Energy Analyzer v14.
+* **Fluxo de Traballo:**
+  1. Extracción de correntes frías e quentes dende o modelo de simulación de Aspen Plus.
+  2. Determinación do punto Pinch, utilidades mínimas quentes ($Q_{H,min}$) e frías ($Q_{C,min}$) para un $\Delta T_{min} = 10^\circ C$.
+  3. Deseño manual e automático da rede de intercambiadores ($HEN$) cumprindo as regras Pinch.
+* **Entregable:** Diagrama de rexetas de temperatura e deseño final da rede HEN en Aspen Energy Analyzer.
+:::

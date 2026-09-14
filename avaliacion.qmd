@@ -1,0 +1,102 @@
+---
+title: "Sistema de Avaliación e Anexo de IA"
+subtitle: "Criterios oficiais de cualificación e Regulamento obrigatorio de Trazabilidade da Intelixencia Artificial"
+---
+
+::: {.hero-banner}
+::: {.hero-content}
+<h2 class="text-white fw-bold mb-2">🎯 Sistema de Avaliación Continuada</h2>
+<p class="text-light mb-0">Rigor académico, liderado enxeñeril e regulación ética do uso de ferramentas de IA xerativa.</p>
+:::
+:::
+
+---
+
+## 📊 Ponderación e Criterios de Cualificación
+
+A avaliación do aprendizaxe estructúrase garantindo o equilibrio entre os coñecementos teóricos rigorosos e as competencias computacionais aplicadas:
+
+::: {.row .g-4 .my-4}
+
+::: {.col-md-3}
+::: {.glass-card .text-center}
+::: {.card-icon}
+📝
+:::
+### 40%
+**Exame Presencial Final**  
+Proba escrita e práctica individual de resolución de problemas e simulación en aula informática.
+:::
+:::
+
+::: {.col-md-3}
+::: {.glass-card .text-center}
+::: {.card-icon}
+💻
+:::
+### 40%
+**Proxecto Personalizado**  
+Deseño, simulación e optimización rigorosa duna planta química asignada individualmente.
+:::
+:::
+
+::: {.col-md-3}
+::: {.glass-card .text-center}
+::: {.card-icon}
+⚙️
+:::
+### 10%
+**Prácticas de Simulación**  
+Asistencia, execución e informes breves das 12 sesións TIC na Aula Informática 5.
+:::
+:::
+
+::: {.col-md-3}
+::: {.glass-card .text-center}
+::: {.card-icon}
+📑
+:::
+### 10%
+**Problemas Autónomos**  
+Resolución autónoma e entrega de entregables programados ao longo do cuadrimestre.
+:::
+:::
+
+:::
+
+::: {.callout-warning icon=true}
+## Condición de Aprobado
+Para superar a materia na convocatoria continua ou extraordinaria, é requisito imprescindible obter unha nota mínima de **4,0 sobre 10** tanto no Exame Presencial Final como no Proxecto Personalizado.
+:::
+
+---
+
+## 🤖 Anexo de Trazabilidade da Intelixencia Artificial (Obrigatorio)
+
+Como parte do compromiso da Escola de Enxeñaría Industrial coa excelencia e o liderado enxeñeril na era dixital, na materia SOPQ autorízase e incentívase o uso ético e crítico de asistentes de Intelixencia Artificial (ChatGPT, Gemini, Claude, GitHub Copilot) baixo as seguintes normas estritas:
+
+::: {.glass-card}
+### 📜 Principios Fundamentais da Trazabilidade de IA
+
+1. **Responsabilidade Enxeñeril Absoluta:** O alumno é o único responsable da veracidade, exactitude física e rigor termodinámico de todos os datos, scripts e cálculos presentados. As alucinacións ou erros xerados pola IA non xustifican fallos enxeñerís.
+2. **Uso Como Co-piloto, Non Como Substituto:** A IA debe empregarse para optimizar código, buscar documentación ou explorar alternativas, nunca para a xeración automática sen revisión do traballo a entregar.
+3. **Declaración Obrigatoria no Anexo:** Calquera entregable (memoria de proxecto, caderno Jupyter ou informe de laboratorio) que empregue IA DEBE incluír obrigatoriamente a **Táboa de Trazabilidade da IA** ao final do documento.
+:::
+
+### 📋 Modelo de Táboa de Trazabilidade da IA
+
+Todo traballo entregado debe incorporar unha táboa homologada segundo a seguinte estrutura:
+
+::: {.schedule-table-wrapper}
+
+| Seccion / Tarefa | Ferramenta IA Empregada | Prompt / Consulta Exacta | Resumo da Resposta Xerada | Verificación e Crítica Enxeñeril Humana | Modificación Aplicada no Entregable Final |
+|:---|:---|:---|:---|:---|:---|
+| **Script Python Práctica 3** | ChatGPT-4o | *"Como implementar a aceleración de Wegstein para un reciclo multivariable en SciPy?"* | Proporcionou unha función con bucle `while` e factor de aceleración $q$. | Detectouse que o factor $q$ non tiña límites, o que provocaba diverxencia térmica. | Adicionouse un delimitador no factor $q \in [-5, 0.95]$ segundo o manual de Aspen. |
+| **Modelo Termodinámico Tema 4** | Claude 3.5 Sonnet | *"Cal é a diferenza entre NRTL e UNIQUAC para esterificacións?"* | Recomendou UNIQUAC indicando falta de parámetros binarios en NRTL. | Verificouse na base de datos de Aspen Plus v14 e constatouse que NRTL si dispón de parámetros binarios. | Mantívose o modelo NRTL xustificando a decisión con datos experimentais de VLE. |
+
+:::
+
+::: {.callout-important icon=true}
+## Declaración Ética Obrigatoria ao Final dos Entregables
+*"Declaro que o traballo presentado é froito do meu desenvolvemento intelectual e enxeñeril. As ferramentas de IA indicadas na táboa anterior foron empregadas exclusivamente como apoio documental e técnico, habendo revisado, validado e asumido a totalidade dos resultados e opinións contidas neste documento."*
+:::

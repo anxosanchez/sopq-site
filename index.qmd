@@ -1,0 +1,138 @@
+---
+title: "Simulación e Optimización de Procesos Químicos"
+subtitle: "Grao en Enxeñaría en Química Industrial — Escola de Enxeñaría Industrial (Universidade de Vigo)"
+page-layout: full
+anchor-sections: false
+listing:
+  id: latest-posts
+  contents: blog/posts
+  sort: "date desc"
+  type: grid
+  grid-columns: 2
+  max-items: 4
+  fields: [image, date, title, subtitle, categories, reading-time]
+---
+
+::: {.hero-banner}
+::: {.hero-content}
+::: {.hero-badges}
+<span class="badge-hero">Código: V12G350V01702</span>
+<span class="badge-hero">6 ECTS</span>
+<span class="badge-hero">Curso 2026 / 2027</span>
+<span class="badge-hero">EEI - Universidade de Vigo</span>
+:::
+
+<h1 class="hero-title">Simulación e Optimización de Procesos Químicos</h1>
+
+<p class="hero-subtitle">
+Portal docente oficial da materia de referencia na modelización, dixitalización e optimización computacional de plantas de proceso químico na Escola de Enxeñaría Industrial.
+</p>
+
+::: {.hero-actions}
+<a href="schedule.html" class="btn-hero-primary">📅 Ver Cronograma 2026/2027</a>
+<a href="laboratorios-tic.html" class="btn-hero-secondary">💻 Laboratorios TIC</a>
+<a href="guia-docente.html" class="btn-hero-secondary">📘 Guía Docente</a>
+:::
+:::
+:::
+
+<div class="container my-5">
+
+## 🚀 Resumo Executivo da Materia
+
+::: {.row .g-4 .mb-5}
+
+::: {.col-md-4}
+::: {.glass-card}
+::: {.card-icon}
+📍
+:::
+### Sede e Horarios
+**Sede Campus Maxwell nº 9**  
+Aula Informática 5 (EEI)  
+  
+**Horario Lectivo:**  
+• Martes: 10:00 - 12:00 h (Teoría)  
+• Xoves: 10:00 - 12:00 h (Laboratorio TIC)  
+  
+[Consulta o mapa e horarios →](horarios.qmd)
+:::
+:::
+
+::: {.col-md-4}
+::: {.glass-card}
+::: {.card-icon}
+⚙️
+:::
+### Ecosistema Tecnolóxico
+**Software Industrial de Vanguardia**  
+• **Aspen Plus v14 & Aspen HYSYS**  
+• **Aspen Energy Analyzer** (Pinch)  
+• **DWSIM** (Open Source Flowsheeting)  
+• **Python-COM** (`win32com`, `scipy.optimize`, `pyomo`)  
+  
+[Explora o catálogo de prácticas →](laboratorios-tic.qmd)
+:::
+:::
+
+::: {.col-md-4}
+::: {.glass-card}
+::: {.card-icon}
+🎯
+:::
+### Sistema de Avaliación
+**Cualificación Continua & Liderado**  
+• **Exame Presencial Final:** 40%  
+• **Proxecto Personalizado:** 40%  
+• **Prácticas de Simulación:** 10%  
+• **Problemas Autónomos:** 10%  
+  
+[Ver criterios e Anexo IA →](avaliacion.qmd)
+:::
+:::
+
+:::
+
+---
+
+## 📚 Bloques Temáticos Principais
+
+::: {.row .g-4 .my-4}
+
+::: {.col-md-6}
+::: {.glass-card}
+### 🔷 Bloque 1: Simulación de Procesos Químicos (Temas 1 - 5)
+Estudo en profundidade da arquitectura computacional dos simuladores industriais:
+- **Paradigmas & Digital Twins**: Introdución á dixitalización de plantas industriais.
+- **Arquitecturas Sequential Modular (SM) vs. Equation Oriented (EO)**: Particionamento, ordenación de grafos (Tarjan/Sargent-Westerberg) e converxencia de reciclos (Wegstein, Broyden).
+- **Graos de Liberdade & Design Specs**: Ecuacións, variables e especificacións de deseño.
+- **Termodinámica Computacional**: Selección rigorosa de modelos de propiedades ($NRTL$, $UNIQUAC$, $UNIFAC$, $Peng-Robinson$, Electrólitos).
+- **Operacións de Separación e Reactores**: Modelización de columnas de destilación, extracción e reactores stoichiometry/kinetic/equilibrium.
+:::
+:::
+
+::: {.col-md-6}
+::: {.glass-card}
+### 🔶 Bloque 2: Optimización de Procesos Químicos (Temas 6 - 9)
+Formulación e resolución numérica de problemas de optimización formulados sobre plantas de proceso:
+- **Fundamentos & Formulación Matemática**: Problemas $NLP$ e $MINLP$ en enxeñaría química.
+- **Optimización Sen Restricións**: Métodos directos e de gradiente (Gradient Descent, BFGS, Nelder-Mead).
+- **Optimización Con Restricións**: Condicións de Karush-Kuhn-Tucker ($KKT$), $SQP$ e algoritmos xenéticos.
+- **Integración Enerxética (Pinch Analysis)**: Cálculo da MER (Minimum Energy Requirement), diagramas de intervalos de temperatura e redes de intercambio de calor ($HEN$).
+:::
+:::
+
+:::
+
+---
+
+## 📢 Últimas Novidades e Publicacións do Blog
+
+::: {#latest-posts}
+:::
+
+<div class="text-center mt-4 mb-5">
+  <a href="blog/index.html" class="btn btn-outline-primary btn-lg rounded-pill px-4">Ver tódalas entradas do blog →</a>
+</div>
+
+</div>

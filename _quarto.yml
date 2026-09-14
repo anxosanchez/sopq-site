@@ -1,0 +1,51 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "SOPQ | EEI UVigo"
+  description: "Portal académico de Simulación e Optimización de Procesos Químicos (V12G350V01702) - Grao en Enxeñaría en Química Industrial, Escola de Enxeñaría Industrial, Universidade de Vigo."
+  site-url: "https://anxosanchez.github.io/sopq-site"
+  repo-url: "https://github.com/anxosanchez/sopq-site"
+  repo-actions: [issue]
+  navbar:
+    background: "#0f172a"
+    search: true
+    left:
+      - text: "Inicio"
+        href: index.qmd
+      - text: "Cronograma"
+        href: schedule.qmd
+      - text: "Guía Docente"
+        href: guia-docente.qmd
+      - text: "Horarios"
+        href: horarios.qmd
+      - text: "Temario"
+        href: temario.qmd
+      - text: "Laboratorios TIC"
+        href: laboratorios-tic.qmd
+      - text: "Avaliación"
+        href: avaliacion.qmd
+      - text: "Blog"
+        href: blog/index.qmd
+    right:
+      - icon: github
+        href: https://github.com/anxosanchez/sopq-site
+        aria-label: GitHub Repository
+  sidebar: false
+  page-footer:
+    left: "© 2026 Prof. Ángel Manuel Sánchez Bermúdez — EEI, Universidade de Vigo"
+    right: "SOPQ (V12G350V01702) | Enxeñaría Química Industrial"
+
+format:
+  html:
+    theme:
+      - custom.scss
+    toc: true
+    toc-depth: 3
+    toc-title: "Nesta páxina"
+    smooth-scroll: true
+    code-copy: true
+    code-fold: show
+    code-tools: true
+    html-math-method: mathjax

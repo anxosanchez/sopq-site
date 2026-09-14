@@ -1,0 +1,37 @@
+---
+title: "Cronograma Lectivo 2026 / 2027"
+subtitle: "Calendario detallado das 14 semanas lectivas efectivas da materia SOPQ (EEI - UVigo)"
+---
+
+::: {.hero-banner}
+::: {.hero-content}
+<h2 class="text-white fw-bold mb-2">📅 Planificación Semanal das Clases</h2>
+<p class="text-light mb-0">Sesións de Teoría (Martes 10:00 - 12:00 h) e Laboratorios TIC na Aula Informática 5 (Xoves 10:00 - 12:00 h).</p>
+:::
+:::
+
+::: {.callout-info icon=true}
+## Calendario Oficial EEI 2026/2027
+O cronograma organízase nas 14 semanas lectivas efectivas do primeiro cuadrimestre. As entregas dos traballos de laboratorio e do proxecto de simulación teñen datas límite estritas marcadas na táboa.
+:::
+
+::: {.schedule-table-wrapper}
+
+| Semana | Data | Tipo | Contido / Sesión | Software / Recurso | Ligazón |
+|:---:|:---:|:---:|:---|:---|:---:|
+| **Semana 1** | Mar 22/Set <br> Xov 24/Set | <span class="badge-type badge-teoria">Teoría</span> <br> <span class="badge-type badge-tic">TIC 1</span> | **Tema 1:** Paradigmas actuais e Digital Twins en Enxeñaría Química. <br> **Práctica 1:** Configuración do contorno Python, Anaconda e interface COM. | Python 3.12 <br> `win32com` | [Blog Tema 1](blog/posts/tema-1/index.qmd) |
+| **Semana 2** | Mar 29/Set <br> Xov 01/Out | <span class="badge-type badge-teoria">Teoría</span> <br> <span class="badge-type badge-tic">TIC 2</span> | **Tema 2:** Arquitecturas Sequential Modular (SM) vs Equation Oriented (EO). <br> **Práctica 2:** Particionamento e ordenación de grafos (Algoritmo de Tarjan). | Graphviz <br> Python | [Blog Tema 2](blog/posts/tema-2/index.qmd) |
+| **Semana 3** | Mar 06/Out <br> Xov 08/Out | <span class="badge-type badge-teoria">Teoría</span> <br> <span class="badge-type badge-tic">TIC 3</span> | **Tema 2 (cont.):** Converxencia de reciclos: Métodos de Wegstein e Broyden. <br> **Práctica 3:** Resolución numérica de reciclos complexos en Python. | SciPy <br> `scipy.optimize` | [Lab TIC 3](laboratorios-tic.qmd#práctica-3) |
+| **Semana 4** | Mar 13/Out <br> Xov 15/Out | <span class="badge-type badge-teoria">Teoría</span> <br> <span class="badge-type badge-tic">TIC 4</span> | **Tema 3:** Graos de Liberdade ($GL = C - P + 2$) e Design Specs. <br> **Práctica 4:** Análise de GL e especificacións en Aspen Plus. | Aspen Plus v14 | [Blog Tema 3](blog/posts/tema-3/index.qmd) |
+| **Semana 5** | Mar 20/Out <br> Xov 22/Out | <span class="badge-type badge-teoria">Teoría</span> <br> <span class="badge-type badge-tic">TIC 5</span> | **Tema 4:** Termodinámica computacional e modelos de propiedades ($NRTL$, $PR$). <br> **Práctica 5:** Árbores de decisión termodinámica e estimación de parámetros. | Aspen Properties | [Blog Tema 4](blog/posts/tema-4/index.qmd) |
+| **Semana 6** | Mar 27/Out <br> Xov 29/Out | <span class="badge-type badge-teoria">Teoría</span> <br> <span class="badge-type badge-tic">TIC 6</span> | **Tema 4 (cont.):** Sistemas de electrólitos e mezclas biorenovables ($UNIFAC$). <br> **Práctica 6:** Simulación de separación flash vapor-líquido e extracción. | Aspen Plus / DWSIM | [Lab TIC 6](laboratorios-tic.qmd#práctica-6) |
+| **Semana 7** | Mar 03/Nov <br> Xov 05/Nov | <span class="badge-type badge-teoria">Teoría</span> <br> <span class="badge-type badge-tic">TIC 7</span> | **Tema 5:** Simulación de columnas de destilación rigorosa (RadFrac). <br> **Práctica 7:** Columnas de destilación e análise de sensibilidade. | Aspen Plus RadFrac | [Lab TIC 7](laboratorios-tic.qmd#práctica-7) |
+| **Semana 8** | Mar 10/Nov <br> Xov 12/Nov | <span class="badge-type badge-teoria">Teoría</span> <br> <span class="badge-type badge-tic">TIC 8</span> | **Tema 5 (cont.):** Reactores químicos (RStoic, RPlug, RCSTR) e integración. <br> **Práctica 8:** Simulación de reactores e bucles de reacción-separación. | Aspen HYSYS | [Lab TIC 8](laboratorios-tic.qmd#práctica-8) |
+| **Semana 9** | Mar 17/Nov <br> Xov 19/Nov | <span class="badge-type badge-teoria">Teoría</span> <br> <span class="badge-type badge-tic">TIC 9</span> | **Tema 6:** Formulación matemática de problemas de optimización ($NLP$, $MINLP$). <br> **Práctica 9:** Automatización e control de Aspen Plus via Python-COM API. | Python-COM <br> `win32com` | [Lab TIC 9](laboratorios-tic.qmd#práctica-9) |
+| **Semana 10** | Mar 24/Nov <br> Xov 26/Nov | <span class="badge-type badge-teoria">Teoría</span> <br> <span class="badge-type badge-tic">TIC 10</span> | **Tema 7:** Optimización univariable e multivariable sen restricións. <br> **Práctica 10:** Algoritmos de gradiente e Nelder-Mead aplicados a reactores. | SciPy / Pyomo | [Lab TIC 10](laboratorios-tic.qmd#práctica-10) |
+| **Semana 11** | Mar 01/Dez <br> Xov 03/Dez | <span class="badge-type badge-teoria">Teoría</span> <br> <span class="badge-type badge-tic">TIC 11</span> | **Tema 8:** Optimización con restricións ($KKT$, $SQP$) e Algoritmos Xenéticos. <br> **Práctica 11:** Resolutores SQP e optimización global de plantas. | Aspen Optimizer | [Lab TIC 11](laboratorios-tic.qmd#práctica-11) |
+| **Semana 12** | Mar 08/Dez <br> Xov 10/Dez | <span class="badge-type badge-teoria">Teoría</span> <br> <span class="badge-type badge-tic">TIC 12</span> | **Tema 9:** Integración enerxética e análise Pinch de redes de calor. <br> **Práctica 12:** Análise Pinch e deseño de redes HEN con Aspen Energy Analyzer. | Aspen Energy Analyzer | [Lab TIC 12](laboratorios-tic.qmd#práctica-12) |
+| **Semana 13** | Mar 15/Dez <br> Xov 17/Dez | <span class="badge-type badge-entrega">Entrega</span> <br> <span class="badge-type badge-teoria">Titoría</span> | **Presentación e Entrega dos Proxectos Personalizados de Simulación.** <br> Obradoiro de revisión de memorias e Anexo de Trazabilidade da IA. | PDF / Jupyter | [Avaliación](avaliacion.qmd) |
+| **Semana 14** | Mar 22/Dez <br> Xov 24/Dez | <span class="badge-type badge-avaliacion">Avaliación</span> | **Exame Presencial de Convocatoria Continua.** <br> Proba avaliativa de resolución de problemas e simulación en aula informática. | Aula Inf. 5 | [Avaliación](avaliacion.qmd) |
+
+:::

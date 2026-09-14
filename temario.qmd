@@ -1,0 +1,87 @@
+---
+title: "Programa e Temario Oficial"
+subtitle: "Estrutura dos 9 temas oficiais da materia SOPQ divididos en Simulación e Optimización"
+---
+
+::: {.hero-banner}
+::: {.hero-content}
+<h2 class="text-white fw-bold mb-2">📖 Temario da Materia SOPQ</h2>
+<p class="text-light mb-0">Desenvolvemento rigoroso dos 9 temas organizados nos dous bloques estructurais da materia.</p>
+:::
+:::
+
+---
+
+## 🔷 Bloque 1: Simulación de Procesos Químicos (Temas 1 a 5)
+
+::: {.glass-card}
+### Tema 1: Introdución á Simulación de Procesos Químicos
+* **1.1. EVOLUCIÓN HISTÓRICA E PARADIGMAS ACTUAIS**: Dende os cálculos manuais de balances de materia ata a simulacion dixital en tempo real.
+* **1.2. CONCEITO DE DIGITAL TWIN (XEMELGO DIXITAL)**: Integración de datos de planta en tempo real con modelos termodinámicos rigorosos.
+* **1.3. ECOSISTEMA TECNOLÓXICO INDUSTRIAL**: Simuladores comerciais (Aspen Plus, HYSYS, PRO/II, ChemCAD) vs. Simuladores Open Source (DWSIM).
+* **1.4. AUTOMATIZACIÓN VIA PYTHON-COM**: Interfaces de programación de aplicacións (API COM/OLE) para conectar Python con simuladores industriais.
+:::
+
+::: {.glass-card}
+### Tema 2: Arquitectura Computacional dos Simuladores
+* **2.1. PARADIGMA SEQUENTIAL MODULAR (SM)**: Cálculo bloque a bloque, propagación de correntes e arquitectura modular.
+* **2.2. PARADIGMA EQUATION ORIENTED (EO)**: Formulación simultánea de sistemas de ecuacións alxébrico-diferenciais ($DAEs$).
+* **2.3. PARTICIONAMENTO E ORDENACIÓN DE GRAFOS**: Algoritmos de ordenación topolóxica, identificación de compoñentes fortemente conexas (Algoritmo de Tarjan e Sargent-Westerberg).
+* **2.4. CONVERXENCIA DE RECICLOS**: Selección de correntes de corte (tear streams) e métodos de aceleración da converxencia (Wegstein, Broyden, Direct Substitution).
+:::
+
+::: {.glass-card}
+### Tema 3: Graos de Liberdade e Especificacións de Deseño
+* **3.1. ANÁLISE DE GRAOS DE LIBERDADE ($GL$)**: Regra das fases de Gibbs ($GL = C - P + 2$) aplicada a unidades individuais e diagramas de fluxo completos.
+* **3.2. SOBREESPECIFICACIÓN E INCONSISTENCIAS**: Identificación e resolución de conflitos en sistemas de especificacións.
+* **3.3. FORMULACIÓN DE DESIGN SPECS (ESPECIFICACIÓNS DE DESEÑO)**: Integración de bucles de control e variables manipuladas vs. variables obxectivo.
+:::
+
+::: {.glass-card}
+### Tema 4: Termodinámica Computacional e Modelos de Propiedades
+* **4.1. SELECCIÓN DE MODELOS DE PROPIEDADES**: Árbores de decisión termodinámicas (Carlson decision tree).
+* **4.2. ECUACIÓNS DE ESTADO ($EOS$)**: Peng-Robinson, Soave-Redlich-Kwong ($SRK$) e extensións para gases e hidrocarburos.
+* **4.3. MODELOS DE COEFICIENTES DE ACTIVIDADE**: $NRTL$, $UNIQUAC$, $Wilson$ para fases líquidas non ideais a baixa presión.
+* **4.4. MÉTODOS DE CONTRIBUCIÓN DE GRUPOS**: $UNIFAC$ para a predición de equilibrio sen datos experimentais.
+* **4.5. SISTEMAS DE ELECTRÓLITOS E BIORENOVABLES**: ElecNTRL, Pitzer e compoñentes non convencionais (sólidos, biomasa).
+:::
+
+::: {.glass-card}
+### Tema 5: Simulación de Operacións de Separación e Reactores Químicos
+* **5.1. SEPARACIÓN VAPOR-LÍQUIDO E LÍQUIDO-LÍQUIDO**: Flashes isotermos, adiabáticos e decantadores.
+* **5.2. COLUMNAS DE DESTILACIÓN RIGOROSAS**: Algoritmo MESH (Material, Equilibrium, Summation, Heat), simuladores RadFrac e refinado de etapas.
+* **5.3. MODELIZACIÓN DE REACTORES QUÍMICOS**: Reactores estequiométricos ($RStoic$), de equilibrio ($REquil$), CSTR ($RCSTR$) e fluxo pistón ($RPlug$) con cinética rigorosa de Power-Law e Langmuir-Hinshelwood.
+:::
+
+---
+
+## 🔶 Bloque 2: Optimización de Procesos Químicos (Temas 6 a 9)
+
+::: {.glass-card}
+### Tema 6: Fundamentos de Optimización en Enxeñaría Química
+* **6.1. FORMULACIÓN MATEMÁTICA XERAL**: Función obxectivo, variables de decisión e restricións de igualdade/desigualdade.
+* **6.2. CLASIFICACIÓN DE PROBLEMAS**: Programación Liñal ($LP$), Non Liñal ($NLP$), Enteira Mixta ($MILP$, $MINLP$).
+* **6.3. CONVEXIDADE E OPTIMIZACIÓN GLOBAL**: Identificación de óptimos locais vs. óptimos globais en liñas de proceso químico.
+:::
+
+::: {.glass-card}
+### Tema 7: Optimización Sen Restricións
+* **7.1. MÉTODOS UNIVARIABLES**: Búsqueda dorada (Golden Section), interpolación cuadrática.
+* **7.2. MÉTODOS MULTIVARIABLES DE GRADIENTE**: Métodos de descensu de gradiente (Gradient Descent), Newton-Raphson e cuasi-Newton ($BFGS$).
+* **7.3. MÉTODOS DIRECTOS (SEN DERIVADAS)**: Algoritmo de Nelder-Mead (Simplex) para funcións obxectivo procedentes de simuladores caixa negra.
+:::
+
+::: {.glass-card}
+### Tema 8: Optimización Con Restricións
+* **8.1. CONDICIÓNS DE KARUSH-KUHN-TUCKER ($KKT$)**: Multiplicadores de Lagrange e condicións de optimización de primeiro e segundo orde.
+* **8.2. PROGRAMACIÓN CUADRÁTICA SECUENCIAL ($SQP$)**: Resolutores industriais para optimización con restricións asociadas a Aspen Plus.
+* **8.3. ALGORITMOS XENÉTICOS E ESTOCÁSTICOS**: Algoritmos evolutivos para a optimización global en superficies con múltiples óptimos locais.
+:::
+
+::: {.glass-card}
+### Tema 9: Integración Enerxética e Análise Pinch
+* **9.1. PRINCIPIOS DA INTEGRACIÓN ENERXÉTICA**: Redución do consumo de utilidades quentes e frías nunha planta química.
+* **9.2. TECNOLOXÍA PINCH (PINCH ANALYSIS)**: Curvas compostas, curva gran composta (Grand Composite Curve) e identificación do punto Pinch.
+* **9.3. REQUISITO MÍNIMO DE ENERXÍA (MER)**: Requisito de utilidades e deseño de redes de intercambio de calor ($HEN$).
+* **9.4. SIMULACIÓN CON ASPEN ENERGY ANALYZER**: Integración de ficheiros de simulación de Aspen Plus con Aspen Energy Analyzer.
+:::

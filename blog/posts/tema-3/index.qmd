@@ -1,0 +1,88 @@
+---
+title: "Tema 3: Graos de Liberdade e Especificacións de Deseño (Design Specs)"
+subtitle: "Análise sistemática de graos de liberdade en plantas químicas, prevención de sobreespecificación e implementación de Design Specs en Aspen Plus"
+date: "2026-10-13"
+author: "Prof. Ángel Manuel Sánchez Bermúdez"
+categories: [Graos de Liberdade, Design Specs, Solución de Inconsistencias, Tema 3]
+---
+
+::: {.hero-banner}
+::: {.hero-content}
+<h2 class="text-white fw-bold mb-2">🎯 Tema 3: Graos de Liberdade e Design Specs</h2>
+<p class="text-light mb-0">Determinación estricta de variables e control computacional de especificacións de proceso.</p>
+:::
+:::
+
+::: {.trilingual-summary}
+::: {.trilingual-header}
+🌐 Resumo Executivo Trilingüe / Trilingual Executive Summary
+:::
+
+::: {.lang-block}
+<span class="lang-flag">Galego (Vehicular)</span>
+O Tema 3 aborda o cálculo estrito dos graos de liberdade ($GL = N_{variables} - N_{ecuacións}$) en unidades individuais e sistemas completos de proceso. Analízanse as consecuencias da sobreespecificación (incompatibilidade matemática) e subespecificación (indeterminación), ensinando a formular *Design Specs* (especificacións de deseño) para que o simulador axuste automaticamente variables manipuladas ata acadar as especificacións obxectivo.
+:::
+
+::: {.lang-block}
+<span class="lang-flag">Castelán (Español)</span>
+El Tema 3 aborda el cálculo estricto de los grados de libertad ($GL = N_{variables} - N_{ecuaciones}$) en unidades individuales y sistemas completos de proceso. Se analizan las consecuencias de la sobreespecificación e subespecificación, enseñando a formular *Design Specs* para que el simulador ajuste automáticamente variables manipuladas hasta alcanzar las especificaciones objetivo.
+:::
+
+::: {.lang-block}
+<span class="lang-flag">Inglés (English)</span>
+Topic 3 deals with the systematic calculation of Degrees of Freedom ($DoF = N_{variables} - N_{equations}$) across unit operations and plant flowsheets. Over-specification and under-specification issues are resolved by formulating automated Design Specs where manipulated variables are iteratively adjusted to satisfy target engineering constraints.
+:::
+:::
+
+---
+
+## 1. Formulación Matemática dos Graos de Liberdade ($GL$)
+
+Para un elemento de proceso químico con $C$ compoñentes e $P$ fases, a regra das fases de Gibbs establece:
+
+$$GL = C - P + 2$$
+
+Para un sistema completo formado por $M$ módulos interconectados:
+
+$$GL_{total} = \sum_{i=1}^{M} GL_i - N_{variables\_enlace}$$
+
+::: {.schedule-table-wrapper}
+
+| Condición de $GL$ | Diagnóstico Técnico | Accion Correctora |
+|:---:|:---|:---|
+| **$GL = 0$** | **Sistema Ben Especificado:** Número de ecuacións igual ao número de variables. | Proceder ao cálculo e resolución do sistema. |
+| **$GL > 0$** | **Sistema Subespecificado:** Faltan especificacións operativas ou de deseño. | Engadir especificacións (temperatura, refluxo, caudais). |
+| **$GL < 0$** | **Sistema Sobreespecificado:** Liñas de cálculo redundantes ou incompatibles. | Eliminar especificacións redundantes para evitar erros de converxencia. |
+
+:::
+
+---
+
+## 2. Implementación de Design Specs en Aspen Plus
+
+Unha **Design Spec** actúa como un controlador de bucle pechado dentro do simulador:
+
+```
+[Variable Obxectivo (Target)] <--- Comparación <--- [Especificación desexada (ex: Puridade = 99.5%)]
+          |                                                       |
+          +---> Axuste iterativo da [Variable Manipulada (Manipulated)]
+```
+
+### Código de Exemplo en Script Aspen-Syntax:
+
+```aspen
+DESIGN-SPEC PURIDAD1
+    DEFINE XETANOL MOLE-FRAC STREAM=DISTIL BLOCK=RADFRAC1 SUBSTREAM=MIXED COMPS=ETHANOL
+    SPEC "XETANOL" TO "0.995"
+    TOLERANCE "0.0001"
+    VARY BLOCK-VAR BLOCK=RADFRAC1 VARIABLE=REFLUX-RATIO
+    LIMITS "1.2" "8.0"
+```
+
+---
+
+## 🎧 Material de Apoio
+
+::: {.media-container}
+💡 **Recurso Docente:** Descarga a folla de exercicios de cálculo de graos de liberdade no portal oficial [NotebookLM SOPQ Tema 3](https://notebooklm.google.com).
+:::
