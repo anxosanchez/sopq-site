@@ -1,38 +1,41 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Inject theme picker button into navbar right if not already present
-  const navbarRight = document.querySelector(".navbar-nav.ms-auto, .navbar-collapse");
-  if (navbarRight && !document.getElementById("theme-picker")) {
-    const picker = document.createElement("div");
-    picker.id = "theme-picker";
-    picker.className = "theme-picker-widget ms-3";
-    picker.innerHTML = `
-      <button class="theme-btn" data-theme="dark" title="Modo Escuro Azul Slate">🌙 Escuro</button>
-      <button class="theme-btn" data-theme="light" title="Modo Claro Perla">☀️ Claro</button>
-      <button class="theme-btn" data-theme="nude" title="Modo Cálido Arena">🎨 Cálido</button>
+  const navbarRight = document.querySelector(".navbar-nav.ms-auto, .navbar-collapse, .navbar-nav");
+  if (navbarRight && !document.getElementById("theme-toggle-switch")) {
+    const toggleContainer = document.createElement("div");
+    toggleContainer.id = "theme-toggle-switch";
+    toggleContainer.className = "theme-switch-wrapper ms-auto me-2";
+    toggleContainer.innerHTML = `
+      <button id="theme-toggle-btn" class="theme-toggle-pill" aria-label="Cambiar Tema Dark/Light" title="Toggle Dark / Light Theme">
+        <span class="theme-icon-dark">🌙</span>
+        <span class="theme-toggle-slider"></span>
+        <span class="theme-icon-light">☀️</span>
+      </button>
     `;
-    navbarRight.appendChild(picker);
+    navbarRight.appendChild(toggleContainer);
 
     const savedTheme = localStorage.getItem("sopq-theme") || "dark";
-    setTheme(savedTheme);
+    applyTheme(savedTheme);
 
-    picker.querySelectorAll(".theme-btn").forEach((btn) => {
-      btn.addEventListener("click", function () {
-        const theme = this.getAttribute("data-theme");
-        setTheme(theme);
-      });
+    document.getElementById("theme-toggle-btn").addEventListener("click", function () {
+      const current = document.documentElement.getAttribute("data-theme") || "dark";
+      const nextTheme = current === "dark" ? "light" : "dark";
+      applyTheme(nextTheme);
     });
   }
 });
 
-function setTheme(theme) {
-  document.documentElement.setAttribute("data-theme", theme);
-  localStorage.setItem("sopq-theme", theme);
+function applyTheme(theme) {
+  // Enforce binary dark/light theme choice
+  const targetTheme = theme === "light" ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", targetTheme);
+  localStorage.setItem("sopq-theme", targetTheme);
 
-  document.querySelectorAll(".theme-btn").forEach((btn) => {
-    if (btn.getAttribute("data-theme") === theme) {
-      btn.classList.add("active");
+  const btn = document.getElementById("theme-toggle-btn");
+  if (btn) {
+    if (targetTheme === "light") {
+      btn.classList.add("is-light");
     } else {
-      btn.classList.remove("active");
+      btn.classList.remove("is-light");
     }
-  });
+  }
 }
