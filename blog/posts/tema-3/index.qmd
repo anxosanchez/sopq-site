@@ -36,6 +36,22 @@ Topic 3 deals with the systematic calculation of Degrees of Freedom ($DoF = N_{v
 
 ---
 
+## 📹 Pílula de Vídeo Docente Inline: Formulación de Design Specs en Aspen Plus
+
+::: {.video-player-wrapper}
+::: {.video-header-bar}
+<span class="video-title">🎥 Pílula de Vídeo 3.1: Análise de Graos de Liberdade e Control de Refluxo</span>
+<span class="badge bg-sky-600 text-white font-bold text-xs px-2.5 py-1 rounded-full">1080p HD Inline</span>
+:::
+
+<video controls poster="https://images.unsplash.com/photo-1507668077129-56e32842fceb?w=1200&q=80" preload="metadata" class="w-100">
+  <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+  O teu navegador non soporta a reprodución directa de vídeo HTML5.
+</video>
+:::
+
+---
+
 ## 1. Formulación Matemática dos Graos de Liberdade ($GL$)
 
 Para un elemento de proceso químico con $C$ compoñentes e $P$ fases, a regra das fases de Gibbs establece:
@@ -81,8 +97,25 @@ DESIGN-SPEC PURIDAD1
 
 ---
 
-## 🎧 Material de Apoio
+## 🎧 Reproductor de Audio Inline: Podcast NotebookLM
 
-::: {.media-container}
+::: {.audio-player-wrapper}
+::: {.audio-header}
+::: {.audio-icon}
+🎯
+:::
+::: {.audio-info}
+<h4 class="audio-title">Podcast Técnico NotebookLM: Graos de Liberdade e Design Specs</h4>
+<p class="audio-sub">Como evitar a sobreespecificación e conflitos de cálculo en simuladores industriais.</p>
+:::
+:::
+
+<audio controls preload="metadata" class="w-100 mt-2">
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" type="audio/mpeg">
+  O teu navegador non soporta o elemento de audio HTML5.
+</audio>
+
+::: {.mt-3}
 💡 **Recurso Docente:** Descarga a folla de exercicios de cálculo de graos de liberdade no portal oficial [NotebookLM SOPQ Tema 3](https://notebooklm.google.com).
+:::
 :::

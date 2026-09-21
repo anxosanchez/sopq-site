@@ -36,6 +36,22 @@ This topic examines the structural differences between Sequential Modular (SM) a
 
 ---
 
+## 📹 Pílula de Vídeo Docente Inline: Particionamento de Grafos e Algoritmo de Tarjan
+
+::: {.video-player-wrapper}
+::: {.video-header-bar}
+<span class="video-title">🎥 Pílula de Vídeo 2.1: Ordenación Topolóxica e Identificación de Reciclos</span>
+<span class="badge bg-sky-600 text-white font-bold text-xs px-2.5 py-1 rounded-full">1080p HD Inline</span>
+:::
+
+<video controls poster="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=1200&q=80" preload="metadata" class="w-100">
+  <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+  O teu navegador non soporta a reprodución directa de vídeo HTML5.
+</video>
+:::
+
+---
+
 ## 1. Paradigma SM (Sequential Modular) vs. EO (Equation Oriented)
 
 ::: {.row .g-4 .my-3}
@@ -98,18 +114,25 @@ def wegstein_accel(x_old, x_new, g_old, g_new, q_min=-5.0, q_max=0.95):
 
 ---
 
-## 🎧 Recursos e Caderno NotebookLM
+## 🎧 Reproductor de Audio Inline: Podcast NotebookLM
 
-::: {.media-container}
-::: {.media-header}
-::: {.media-icon}
+::: {.audio-player-wrapper}
+::: {.audio-header}
+::: {.audio-icon}
 📚
 :::
-<div>
-  <h4 class="media-title">Caderno e Podcast NotebookLM: Reciclos e Algoritmos de Grafos</h4>
-  <small class="text-muted">Análise interactiva do algoritmo de Tarjan e Sargent-Westerberg.</small>
-</div>
+::: {.audio-info}
+<h4 class="audio-title">Caderno e Podcast NotebookLM: Reciclos e Algoritmos de Grafos</h4>
+<p class="audio-sub">Análise interactiva do algoritmo de Tarjan e Sargent-Westerberg.</p>
+:::
 :::
 
-Estuda os detalles da matriz de adxacencia e descomposicion de grafos no caderno oficial [NotebookLM SOPQ Tema 2](https://notebooklm.google.com).
+<audio controls preload="metadata" class="w-100 mt-2">
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+  O teu navegador non soporta o elemento de audio HTML5.
+</audio>
+
+::: {.mt-3}
+💡 **Recurso de Estudo:** Consulta o caderno de traballo interactivo en [NotebookLM SOPQ Tema 2](https://notebooklm.google.com).
+:::
 :::

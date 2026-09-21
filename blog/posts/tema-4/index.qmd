@@ -36,6 +36,22 @@ Topic 4 serves as the thermodynamic foundation of process flowsheeting. Carlson'
 
 ---
 
+## 📹 Pílula de Vídeo Docente Inline: Selección Termodinámica e Árbore de Carlson
+
+::: {.video-player-wrapper}
+::: {.video-header-bar}
+<span class="video-title">🎥 Pílula de Vídeo 4.1: Peng-Robinson vs. NRTL/UNIQUAC en Aspen Properties</span>
+<span class="badge bg-sky-600 text-white font-bold text-xs px-2.5 py-1 rounded-full">1080p HD Inline</span>
+:::
+
+<video controls poster="https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=1200&q=80" preload="metadata" class="w-100">
+  <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4" type="video/mp4">
+  O teu navegador non soporta a reprodución directa de vídeo HTML5.
+</video>
+:::
+
+---
+
 ## 1. Árbore de Decisión Termodinámica (Carlson Decision Tree)
 
 A elección incorrecta do modelo de propiedades é a causa principal do fallo de simulacións industriais.
@@ -70,18 +86,25 @@ Onde $G_{ij} = \exp(-\alpha_{ij} \tau_{ij})$. Ideal para mezclas líquidas altam
 
 ---
 
-## 🎧 Audio e Material NotebookLM
+## 🎧 Reproductor de Audio Inline: Podcast NotebookLM
 
-::: {.media-container}
-::: {.media-header}
-::: {.media-icon}
-🎙️
+::: {.audio-player-wrapper}
+::: {.audio-header}
+::: {.audio-icon}
+🧪
 :::
-<div>
-  <h4 class="media-title">Podcast NotebookLM: Selección Termodinámica e Erros Frecuentes</h4>
-  <small class="text-muted">Como evitar catástrofes de simulación escollendo o modelo termodinámico correcto.</small>
-</div>
+::: {.audio-info}
+<h4 class="audio-title">Podcast NotebookLM: Selección Termodinámica e Erros Frecuentes</h4>
+<p class="audio-sub">Como evitar catástrofes de simulación escollendo o modelo termodinámico correcto.</p>
+:::
 :::
 
-Accede ao caderno completo e simulador interactivo de coeficientes de actividade en [NotebookLM SOPQ Tema 4](https://notebooklm.google.com).
+<audio controls preload="metadata" class="w-100 mt-2">
+  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3" type="audio/mpeg">
+  O teu navegador non soporta o elemento de audio HTML5.
+</audio>
+
+::: {.mt-3}
+💡 Accede ao caderno completo e simulador interactivo de coeficientes de actividade en [NotebookLM SOPQ Tema 4](https://notebooklm.google.com).
+:::
 :::
