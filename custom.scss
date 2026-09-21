@@ -20,6 +20,16 @@ $navbar-fg: #f8fafc;
 $navbar-hl: #38bdf8;
 $link-color: #0284c7;
 
+// Quarto Full Fluid Grid Overrides
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
 /*-- scss:rules --*/
 
 // Smooth Scrolling & Modern Layout Foundations
@@ -35,12 +45,63 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+// Full Percentage Fluid Layout (Non-fixed Widths)
+.container,
+.container-fluid,
+#quarto-content,
+.page-columns,
+.main-content,
+#quarto-document-content {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+// Fluid Grid Columns (Left, Middle, Right Panels defined as percentages)
+.row {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.col-md-4 {
+  flex: 0 0 33.333333% !important;
+  max-width: 33.333333% !important;
+  width: 33.333333% !important;
+}
+
+.col-md-6 {
+  flex: 0 0 50% !important;
+  max-width: 50% !important;
+  width: 50% !important;
+}
+
+.col-md-3 {
+  flex: 0 0 25% !important;
+  max-width: 25% !important;
+  width: 25% !important;
+}
+
+@media (max-width: 768px) {
+  .col-md-4, .col-md-6, .col-md-3 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+
 // Navbar Enhancements
 .navbar {
   box-shadow: 0 4px 20px rgba(15, 23, 42, 0.15);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 0.75rem 1.5rem;
+  width: 100% !important;
 
   .navbar-brand {
     font-weight: 800;
@@ -68,6 +129,7 @@ body {
 // Animated Mesh Gradient Hero Banner
 .hero-banner {
   position: relative;
+  width: 100% !important;
   background: linear-gradient(135deg, #0f172a 0%, #1e293b 40%, #0f766e 100%);
   color: #ffffff;
   padding: 4.5rem 2rem 5rem 2rem;
@@ -92,7 +154,8 @@ body {
   .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 900px;
+    width: 100% !important;
+    max-width: 100% !important;
     margin: 0 auto;
     text-align: center;
     animation: fadeInUp 0.8s ease-out;
@@ -202,6 +265,7 @@ body {
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100% !important;
 
   &:hover {
     transform: translateY(-6px);
@@ -236,10 +300,11 @@ body {
   box-shadow: 0 4px 25px rgba(15, 23, 42, 0.08);
   border: 1px solid #e2e8f0;
   margin: 2rem 0;
+  width: 100% !important;
 
   table {
     margin-bottom: 0;
-    width: 100%;
+    width: 100% !important;
     border-collapse: collapse;
 
     thead {
@@ -326,6 +391,7 @@ body {
   padding: 1.5rem;
   margin: 1.5rem 0;
   box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+  width: 100% !important;
 
   .media-header {
     display: flex;
@@ -362,6 +428,7 @@ body {
   padding: 1.75rem;
   margin: 2rem 0;
   box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  width: 100% !important;
 
   .trilingual-header {
     font-size: 1.15rem;
@@ -409,4 +476,5 @@ body {
   border-radius: 0.75rem !important;
   border-left-width: 5px !important;
   box-shadow: 0 4px 15px rgba(15, 23, 42, 0.04);
+  width: 100% !important;
 }

@@ -41,6 +41,7 @@ format:
   html:
     theme:
       - custom.scss
+    page-layout: full
     toc: true
     toc-depth: 3
     toc-title: "Nesta páxina"
