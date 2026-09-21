@@ -9,7 +9,7 @@ website:
   repo-url: "https://github.com/anxosanchez/sopq-site"
   repo-actions: [issue]
   navbar:
-    background: "#0f172a"
+    background: "#0b132b"
     search: true
     left:
       - text: "Inicio"
@@ -50,3 +50,6 @@ format:
     code-fold: show
     code-tools: true
     html-math-method: mathjax
+    include-after-body:
+      - text: |
+          <script src="/theme-switcher.js"></script>
